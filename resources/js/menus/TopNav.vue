@@ -38,9 +38,8 @@
               Familii ocupationale
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Adauga</a>
-              <a class="dropdown-item" href="#">Sterge</a>
-              <a class="dropdown-item" href="#">Vizualizare</a>
+              <a class="dropdown-item" href="#">Invatamant</a>
+              <a class="dropdown-item" href="#">Sanatate si asistenta sociala</a>
             </div>
           </li>
           <li class="nav-item dropdown">
