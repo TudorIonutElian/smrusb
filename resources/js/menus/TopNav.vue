@@ -22,6 +22,9 @@
           <li class="nav-item">
             <a class="nav-link" href="#">Despre SMRUSB</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Regiuni</a>
+          </li>
           <li class="nav-item dropdown">
             <a
               class="nav-link dropdown-toggle"
