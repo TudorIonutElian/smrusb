@@ -25,6 +25,24 @@
           <li class="nav-item">
             <a class="nav-link" href="#">Regiuni</a>
           </li>
+           <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Familii ocupationale
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Adauga</a>
+              <a class="dropdown-item" href="#">Sterge</a>
+              <a class="dropdown-item" href="#">Vizualizare</a>
+            </div>
+          </li>
           <li class="nav-item dropdown">
             <a
               class="nav-link dropdown-toggle"

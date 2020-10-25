@@ -2243,6 +2243,27 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({});
 
 /***/ }),
@@ -38068,6 +38089,57 @@ var staticRenderFns = [
                   ])
                 ]),
                 _vm._v(" "),
+                _c("li", { staticClass: "nav-item" }, [
+                  _c("a", { staticClass: "nav-link", attrs: { href: "#" } }, [
+                    _vm._v("Regiuni")
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("li", { staticClass: "nav-item dropdown" }, [
+                  _c(
+                    "a",
+                    {
+                      staticClass: "nav-link dropdown-toggle",
+                      attrs: {
+                        href: "#",
+                        id: "navbarDropdown",
+                        role: "button",
+                        "data-toggle": "dropdown",
+                        "aria-haspopup": "true",
+                        "aria-expanded": "false"
+                      }
+                    },
+                    [_vm._v("\n            Familii ocupationale\n          ")]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass: "dropdown-menu",
+                      attrs: { "aria-labelledby": "navbarDropdown" }
+                    },
+                    [
+                      _c(
+                        "a",
+                        { staticClass: "dropdown-item", attrs: { href: "#" } },
+                        [_vm._v("Adauga")]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "a",
+                        { staticClass: "dropdown-item", attrs: { href: "#" } },
+                        [_vm._v("Sterge")]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "a",
+                        { staticClass: "dropdown-item", attrs: { href: "#" } },
+                        [_vm._v("Vizualizare")]
+                      )
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
                 _c("li", { staticClass: "nav-item dropdown" }, [
                   _c(
                     "a",
@@ -53949,8 +54021,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! E:\AS-ASE\smrusb\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! E:\AS-ASE\smrusb\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! E:\AS-ASE\working\smrusb\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! E:\AS-ASE\working\smrusb\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })
