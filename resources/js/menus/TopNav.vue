@@ -40,6 +40,10 @@
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
               <a class="dropdown-item" href="#">I - Invatamant</a>
               <a class="dropdown-item" href="#">II - Sanatate si asistenta sociala</a>
+              <a class="dropdown-item" href="#">III - Cultura, unitati de cultura</a>
+              <a class="dropdown-item" href="#">IV - Diplomatie</a>
+              <a class="dropdown-item" href="#">V - Justitie si Curtea Constitutionala</a>
+              <a class="dropdown-item" href="#">VI - Aparare, ordine publica si securitate nationala</a>
             </div>
           </li>
           <li class="nav-item dropdown">
