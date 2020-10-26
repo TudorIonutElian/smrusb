@@ -59,9 +59,9 @@
               Ordonatori
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Adauga</a>
-              <a class="dropdown-item" href="#">Sterge</a>
-              <a class="dropdown-item" href="#">Vizualizare</a>
+              <a class="dropdown-item" href="#">Adauga Ordonator</a>
+              <a class="dropdown-item" href="#">Sterge Ordonator</a>
+              <a class="dropdown-item" href="#">Vizualizare Ordonator</a>
             </div>
           </li>
           <li class="nav-item dropdown">
