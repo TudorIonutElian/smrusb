@@ -10,4 +10,8 @@ class Regiuni extends Model
     use HasFactory;
 
     protected $table="regiuni";
+
+    public function Judete(){
+        return $this->hasMany('App\Models\Judete', 'regiune');
+    }
 }
