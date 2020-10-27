@@ -1,7 +1,7 @@
 {
     "private": true,
     "scripts": {
-        "update-down": "sudo git fetch origin && sudo git stash push --include-untracked && sudo git pull origin main && npm run dev",
+        "update-down": "sudo git fetch origin && sudo git pull origin main && npm run dev",
         "update-up" : "scp .env root@157.230.89.180:/var/www/html",
         "dev": "npm run development",
         "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
