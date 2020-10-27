@@ -2264,6 +2264,25 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({});
 
 /***/ }),
@@ -38109,6 +38128,39 @@ var staticRenderFns = [
                         "aria-expanded": "false"
                       }
                     },
+                    [_vm._v("\n            Judete\n          ")]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass: "dropdown-menu",
+                      attrs: { "aria-labelledby": "navbarDropdown" }
+                    },
+                    [
+                      _c(
+                        "a",
+                        { staticClass: "dropdown-item", attrs: { href: "#" } },
+                        [_vm._v("Arad")]
+                      )
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("li", { staticClass: "nav-item dropdown" }, [
+                  _c(
+                    "a",
+                    {
+                      staticClass: "nav-link dropdown-toggle",
+                      attrs: {
+                        href: "#",
+                        id: "navbarDropdown",
+                        role: "button",
+                        "data-toggle": "dropdown",
+                        "aria-haspopup": "true",
+                        "aria-expanded": "false"
+                      }
+                    },
                     [_vm._v("\n            Familii ocupationale\n          ")]
                   ),
                   _vm._v(" "),
@@ -38122,19 +38174,41 @@ var staticRenderFns = [
                       _c(
                         "a",
                         { staticClass: "dropdown-item", attrs: { href: "#" } },
-                        [_vm._v("Adauga")]
+                        [_vm._v("I - Invatamant")]
                       ),
                       _vm._v(" "),
                       _c(
                         "a",
                         { staticClass: "dropdown-item", attrs: { href: "#" } },
-                        [_vm._v("Sterge")]
+                        [_vm._v("II - Sanatate si asistenta sociala")]
                       ),
                       _vm._v(" "),
                       _c(
                         "a",
                         { staticClass: "dropdown-item", attrs: { href: "#" } },
-                        [_vm._v("Vizualizare")]
+                        [_vm._v("III - Cultura, unitati de cultura")]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "a",
+                        { staticClass: "dropdown-item", attrs: { href: "#" } },
+                        [_vm._v("IV - Diplomatie")]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "a",
+                        { staticClass: "dropdown-item", attrs: { href: "#" } },
+                        [_vm._v("V - Justitie si Curtea Constitutionala")]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "a",
+                        { staticClass: "dropdown-item", attrs: { href: "#" } },
+                        [
+                          _vm._v(
+                            "VI - Aparare, ordine publica si securitate nationala"
+                          )
+                        ]
                       )
                     ]
                   )
@@ -38167,19 +38241,19 @@ var staticRenderFns = [
                       _c(
                         "a",
                         { staticClass: "dropdown-item", attrs: { href: "#" } },
-                        [_vm._v("Adauga")]
+                        [_vm._v("Adauga Ordonator")]
                       ),
                       _vm._v(" "),
                       _c(
                         "a",
                         { staticClass: "dropdown-item", attrs: { href: "#" } },
-                        [_vm._v("Sterge")]
+                        [_vm._v("Sterge Ordonator")]
                       ),
                       _vm._v(" "),
                       _c(
                         "a",
                         { staticClass: "dropdown-item", attrs: { href: "#" } },
-                        [_vm._v("Vizualizare")]
+                        [_vm._v("Vizualizare Ordonator")]
                       )
                     ]
                   )
