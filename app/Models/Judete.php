@@ -9,4 +9,8 @@ class Judete extends Model
 {
     use HasFactory;
     protected $table="judete";
+
+    public function getRegiune(){
+        return $this->belongsTo('App\Models\Regiuni', 'regiune');
+    }
 }

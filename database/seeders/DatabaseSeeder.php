@@ -16,7 +16,8 @@ class DatabaseSeeder extends Seeder
         $this->call(
             [
                 RegiuniSeeder::class,
-                JudeteSeeder::class
+                JudeteSeeder::class,
+                LocalitatiSeeder::class
             ]
         );
     }

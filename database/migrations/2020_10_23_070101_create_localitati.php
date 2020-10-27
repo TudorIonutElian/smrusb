@@ -15,7 +15,11 @@ class CreateLocalitati extends Migration
     {
         Schema::create('localitati', function (Blueprint $table) {
             $table->id();
-            $table->timestamps();
+            $table->string('denumire', 70);
+            $table->unsignedBigInteger('judet');
+
+
+            $table->foreign('judet')->references('id')->on('judete');
         });
     }
 
@@ -26,6 +30,11 @@ class CreateLocalitati extends Migration
      */
     public function down()
     {
+    
+        Schema::table('localitati', function (Blueprint $table){
+            $table->dropForeign('localitati_judet_foreign');
+        });
+        
         Schema::dropIfExists('localitati');
     }
 }
