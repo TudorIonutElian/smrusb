@@ -19,18 +19,6 @@ class CreateRegiuni extends Migration
             $table->string('denumire', 40);
         });
 
-        DB::table('regiuni')->insert(
-            array(
-                ['denumire'  => 'Regiunea Nord-Est'],
-                ['denumire'  => 'Regiunea Sud-Est'],
-                ['denumire'  => 'Regiunea Sud - Muntenia'],
-                ['denumire'  => 'Regiunea Sud-Vest Oltenia'],
-                ['denumire'  => 'Regiunea Vest'],
-                ['denumire'  => 'Regiunea Nord-Vest'],
-                ['denumire'  => 'Regiunea Centru'],
-                ['denumire'  => 'Regiunea București - Ilfov']
-            )
-        );
     }
 
     /**
