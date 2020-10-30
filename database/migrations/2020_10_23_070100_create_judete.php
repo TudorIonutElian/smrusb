@@ -18,8 +18,6 @@ class CreateJudete extends Migration
             $table->id();
             $table->string('denumire', 30);
             $table->unsignedBigInteger('regiune');
-            $table->unsignedBigInteger('resedinta')->nullable();
-
 
             $table->foreign('regiune')->references('id')->on('regiuni');
         });
