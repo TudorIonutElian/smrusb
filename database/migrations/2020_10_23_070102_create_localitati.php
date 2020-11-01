@@ -17,10 +17,11 @@ class CreateLocalitati extends Migration
             $table->id();
             $table->string('denumire', 70);
             $table->unsignedBigInteger('judet');
-            $table->boolean('urban')->nullable();
-            $table->boolean('resedinta')->nullable();
+            $table->boolean('urban')->default(false);
+            $table->boolean('resedinta')->default(false);
+            $table->boolean('stare')->default(true);
 
-            $table->foreign('judet')->references('id')->on('judete');
+            $table->foreign('judet')->references('id')->on('judete')->onDelete('cascade');
         });
     }
 

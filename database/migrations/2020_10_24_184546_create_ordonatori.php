@@ -21,7 +21,7 @@ class CreateOrdonatori extends Migration
             $table->date('data_radiere');
             $table->boolean('stare');
 
-            $table->foreign('tip')->references('id')->on('tip_ordonatori');
+            $table->foreign('tip')->references('id')->on('tip_ordonatori')->onDelete('cascade');;
         });
     }
 
