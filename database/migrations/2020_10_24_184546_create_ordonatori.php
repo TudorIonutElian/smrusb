@@ -15,13 +15,12 @@ class CreateOrdonatori extends Migration
     {
         Schema::create('ordonatori', function (Blueprint $table) {
             $table->id();
-            $table->string('denumire', 50);
-            $table->unsignedBigInteger('tip');
+            $table->string('denumire', 100);
+            $table->unsignedBigInteger('tip_ordonator');
             $table->date('data_infiintare');
-            $table->date('data_radiere');
             $table->boolean('stare');
 
-            $table->foreign('tip')->references('id')->on('tip_ordonatori')->onDelete('cascade');;
+            $table->foreign('tip_ordonator')->references('id')->on('tip_ordonatori')->onDelete('cascade');
         });
     }
 
@@ -33,7 +32,7 @@ class CreateOrdonatori extends Migration
     public function down()
     {
         Schema::table('ordonatori', function (Blueprint $table){
-            $table->dropForeign('ordonatori_tip_foreign');
+            $table->dropForeign('ordonatori_tip_ordonator_foreign');
         });
         Schema::dropIfExists('ordonatori');
     }

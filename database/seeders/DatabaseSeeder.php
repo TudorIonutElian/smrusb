@@ -18,7 +18,9 @@ class DatabaseSeeder extends Seeder
                 RegiuniSeeder::class,
                 JudeteSeeder::class,
                 LocalitatiSeeder::class,
-                FamiliiOcupationaleSeeder::class
+                FamiliiOcupationaleSeeder::class,
+                TipOrdonatoriSeeder::class,
+                OrdonatoriSeeder::class
             ]
         );
     }

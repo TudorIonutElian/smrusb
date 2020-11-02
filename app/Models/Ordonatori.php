@@ -8,5 +8,6 @@ use Illuminate\Database\Eloquent\Model;
 class Ordonatori extends Model
 {
     use HasFactory;
+
     protected $table="ordonatori";
 }
