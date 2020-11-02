@@ -9,4 +9,10 @@ class Localitati extends Model
 {
     use HasFactory;
     protected $table="localitati";
+
+
+    /* ------------------ AFISARE JUDET------------------*/
+    public function getJudet(){
+        return $this->belongsTo('App\Models\Judet', 'judet');
+    }
 }

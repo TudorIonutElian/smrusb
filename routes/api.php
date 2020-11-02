@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Resources\JudeteCollection;
+use App\Models\Judete;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -16,4 +18,9 @@ use Illuminate\Support\Facades\Route;
 
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
+});
+
+
+Route::get('/judete', function () {
+    return JudeteCollection::collection(Judete::all());
 });
