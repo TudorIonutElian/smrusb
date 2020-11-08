@@ -1,7 +1,7 @@
 <template>
   <div>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <a class="navbar-brand" href="#">@SMRUSB</a>
+    <nav class="navbar navbar-expand-lg">
+      <a class="navbar-brand" href="#">SMRUSB</a>
       <button
         class="navbar-toggler"
         type="button"
@@ -16,9 +16,6 @@
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Acasa</a>
-          </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Despre SMRUSB</a>
           </li>
@@ -41,7 +38,7 @@
               <a class="dropdown-item" href="#">Arad</a>
             </div>
           </li>
-           <li class="nav-item dropdown">
+          <li class="nav-item dropdown">
             <a
               class="nav-link dropdown-toggle"
               href="#"
@@ -55,11 +52,19 @@
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
               <a class="dropdown-item" href="#">I - Invatamant</a>
-              <a class="dropdown-item" href="#">II - Sanatate si asistenta sociala</a>
-              <a class="dropdown-item" href="#">III - Cultura, unitati de cultura</a>
+              <a class="dropdown-item" href="#"
+                >II - Sanatate si asistenta sociala</a
+              >
+              <a class="dropdown-item" href="#"
+                >III - Cultura, unitati de cultura</a
+              >
               <a class="dropdown-item" href="#">IV - Diplomatie</a>
-              <a class="dropdown-item" href="#">V - Justitie si Curtea Constitutionala</a>
-              <a class="dropdown-item" href="#">VI - Aparare, ordine publica si securitate nationala</a>
+              <a class="dropdown-item" href="#"
+                >V - Justitie si Curtea Constitutionala</a
+              >
+              <a class="dropdown-item" href="#"
+                >VI - Aparare, ordine publica si securitate nationala</a
+              >
             </div>
           </li>
           <li class="nav-item dropdown">
@@ -231,3 +236,39 @@
 <script>
 export default {};
 </script>
+
+<style scoped>
+.navbar {
+  background-color: #222f3e;
+}
+.navbar-brand {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: 18px;
+  color: #fff;
+  text-decoration: none;
+}
+.navbar-brand:hover {
+  text-decoration: none;
+  color: #48dbfb;
+  transition: color 0.5s;
+}
+li.nav-item a{
+  color: #fff;
+}
+li.nav-item:hover > .nav-link {
+  background-color: #273c75;
+  color: #ffffff;
+  border-radius: 2px;
+  font-weight: bold;
+}
+.dropdown-menu,
+.dropdown-item {
+  background-color: #222f3e;
+  color: #fff;
+}
+.dropdown-item:hover{
+  background-color: #273c75;
+  color: #ffffff;
+}
+</style>
