@@ -33,6 +33,7 @@ return array(
     'App\\Http\\Middleware\\VerifyCsrfToken' => $baseDir . '/app/Http/Middleware/VerifyCsrfToken.php',
     'App\\Http\\Resources\\JudeteCollection' => $baseDir . '/app/Http/Resources/JudeteCollection.php',
     'App\\Http\\Resources\\LocalitatiCollection' => $baseDir . '/app/Http/Resources/LocalitatiCollection.php',
+    'App\\Http\\Resources\\OrdonatoriCollection' => $baseDir . '/app/Http/Resources/OrdonatoriCollection.php',
     'App\\Http\\Resources\\RegiuniCollection' => $baseDir . '/app/Http/Resources/RegiuniCollection.php',
     'App\\Models\\Angajati' => $baseDir . '/app/Models/Angajati.php',
     'App\\Models\\Documente' => $baseDir . '/app/Models/Documente.php',

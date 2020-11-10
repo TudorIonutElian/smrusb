@@ -15,12 +15,16 @@ Vue.use(VueRouter)
 
 
 import Home from './components/Home.vue';
+import Ordonatori from './components/Ordonatori.vue';
 
 const router = new VueRouter({
     mode: 'history',
     routes: [
-      // dynamic segments start with a colon
+      // Route Home
       { path: '/', component: Home },
+
+      // Route Ordonatori de Credite
+      { path: '/ordonatori', component: Ordonatori },
     ]
   });
 

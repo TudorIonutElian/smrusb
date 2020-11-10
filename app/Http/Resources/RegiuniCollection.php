@@ -2,9 +2,9 @@
 
 namespace App\Http\Resources;
 
-use Illuminate\Http\Resources\Json\ResourceCollection;
+use Illuminate\Http\Resources\Json\JsonResource;
 
-class RegiuniCollection extends ResourceCollection
+class RegiuniCollection extends JsonResource
 {
     /**
      * Transform the resource collection into an array.
@@ -18,6 +18,6 @@ class RegiuniCollection extends ResourceCollection
             'idRegiune'         => $this->id,
             'denumireRegiune'   => $this->denumire,
             'judeteRegiune'     => $this->getJudete
-            ];
+        ];
     }
 }

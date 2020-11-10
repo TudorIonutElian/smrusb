@@ -1,7 +1,14 @@
 <?php
 
+// Import Collections
 use App\Http\Resources\JudeteCollection;
+use App\Http\Resources\OrdonatoriCollection;
+
+// Import Models
 use App\Models\Judete;
+use App\Models\Ordonatori;
+
+
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -24,3 +31,8 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 Route::get('/judete', function () {
     return JudeteCollection::collection(Judete::all());
 });
+
+Route::get('/ordonatori', function () {
+    return OrdonatoriCollection::collection(Ordonatori::all());
+});
+

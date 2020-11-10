@@ -557,6 +557,7 @@ class ComposerStaticInit25e4c5e5a7124b021f284795ef2b2d28
         'App\\Http\\Middleware\\VerifyCsrfToken' => __DIR__ . '/../..' . '/app/Http/Middleware/VerifyCsrfToken.php',
         'App\\Http\\Resources\\JudeteCollection' => __DIR__ . '/../..' . '/app/Http/Resources/JudeteCollection.php',
         'App\\Http\\Resources\\LocalitatiCollection' => __DIR__ . '/../..' . '/app/Http/Resources/LocalitatiCollection.php',
+        'App\\Http\\Resources\\OrdonatoriCollection' => __DIR__ . '/../..' . '/app/Http/Resources/OrdonatoriCollection.php',
         'App\\Http\\Resources\\RegiuniCollection' => __DIR__ . '/../..' . '/app/Http/Resources/RegiuniCollection.php',
         'App\\Models\\Angajati' => __DIR__ . '/../..' . '/app/Models/Angajati.php',
         'App\\Models\\Documente' => __DIR__ . '/../..' . '/app/Models/Documente.php',

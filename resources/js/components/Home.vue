@@ -1,6 +1,7 @@
 <template>
   <div>
     <top-nav></top-nav>
+    <home-jumbotron></home-jumbotron>
     <div class="container-fluid">
       <div class="row mt-3">
         <div class="col-12">
@@ -11,12 +12,14 @@
   </div>
 </template>
 
-<script>
+<script>  
+// Importinn other components
 import TopNav from "../menus/TopNav.vue";
+import HomeJumbotron from "../helpers/HomeJumbotron.vue";
 export default {
   data() {
     return {};
   },
-  components: { TopNav },
+  components: { TopNav, HomeJumbotron },
 };
 </script>

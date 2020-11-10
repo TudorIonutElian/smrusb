@@ -256,19 +256,25 @@ export default {};
 li.nav-item a{
   color: #fff;
 }
+li.nav-item:hover{
+  color: #000;
+}
 li.nav-item:hover > .nav-link {
-  background-color: #273c75;
-  color: #ffffff;
-  border-radius: 2px;
-  font-weight: bold;
+  background-color:#48dbfb;
+  color: #000;
+  border-radius: 3px;
+  text-decoration: none;
+  transition: background-color 0.5s;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
 }
 .dropdown-menu,
 .dropdown-item {
   background-color: #222f3e;
-  color: #fff;
+  color: #000;
 }
 .dropdown-item:hover{
-  background-color: #273c75;
-  color: #ffffff;
+  background-color: #48dbfb;
+  color:#000;
 }
 </style>
