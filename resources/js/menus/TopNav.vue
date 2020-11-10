@@ -80,6 +80,7 @@
               Ordonatori
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="/ordonatori">Vezi Ordonatori</a>
               <a class="dropdown-item" href="#">Adauga Ordonator</a>
               <a class="dropdown-item" href="#">Sterge Ordonator</a>
               <a class="dropdown-item" href="#">Vizualizare Ordonator</a>
@@ -234,6 +235,7 @@
 
 
 <script>
+import { faPlus } from '@fortawesome/free-solid-svg-icons'
 export default {};
 </script>
 
