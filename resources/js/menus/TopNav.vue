@@ -83,7 +83,6 @@
               <a class="dropdown-item" href="/ordonatori">Vezi Ordonatori</a>
               <a class="dropdown-item" href="#">Adauga Ordonator</a>
               <a class="dropdown-item" href="#">Sterge Ordonator</a>
-              <a class="dropdown-item" href="#">Vizualizare Ordonator</a>
             </div>
           </li>
           <li class="nav-item dropdown">

@@ -9347,7 +9347,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({});
 
@@ -46790,12 +46789,6 @@ var staticRenderFns = [
                       "a",
                       { staticClass: "dropdown-item", attrs: { href: "#" } },
                       [_vm._v("Sterge Ordonator")]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "a",
-                      { staticClass: "dropdown-item", attrs: { href: "#" } },
-                      [_vm._v("Vizualizare Ordonator")]
                     )
                   ]
                 )
