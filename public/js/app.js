@@ -2179,6 +2179,13 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
@@ -6913,7 +6920,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n.component-full-page[data-v-2e8e1e0a] {\r\n    width: 100vw;\r\n    height: 100vh;\n}\n.component-full-page .container-fluid[data-v-2e8e1e0a] {\r\n    height: 94.5%;\n}\n.component-full-page .container-fluid .row-full[data-v-2e8e1e0a] {\r\n    height: 100%;\n}\n.box-institutie[data-v-2e8e1e0a] {\r\n    display: flex;\r\n    flex-direction: row;\r\n    justify-content: space-around;\r\n    align-self: center;\r\n    text-align: center;\r\n    padding: 5px;\n}\n.box-institutie div[data-v-2e8e1e0a] {\r\n    align-content: flex-end;\r\n    width: 50%;\n}\n.box-institutie div[data-v-2e8e1e0a]:nth-child(1) {\r\n    text-align: right;\r\n    padding-right: 10%;\n}\r\n", ""]);
+exports.push([module.i, "\n.component-full-page[data-v-2e8e1e0a] {\r\n    width: 100vw;\r\n    height: 100vh;\n}\n.component-full-page .container-fluid[data-v-2e8e1e0a] {\r\n    height: 94.5%;\n}\n.component-full-page .container-fluid .row-full[data-v-2e8e1e0a] {\r\n    height: 100%;\n}\n.box-institutie[data-v-2e8e1e0a] {\r\n    display: flex;\r\n    flex-direction: row;\r\n    justify-content: space-around;\r\n    align-content: center;\r\n    text-align: center;\r\n    padding: 5px;\n}\n.box-institutie div[data-v-2e8e1e0a] {\r\n    align-content: flex-end;\r\n    width: 50%;\n}\n.box-institutie div[data-v-2e8e1e0a]:nth-child(1) {\r\n    text-align: right;\r\n    padding-right: 10%;\n}\n.header_institutie[data-v-2e8e1e0a] {\r\n    min-height: 65px;\r\n    display: flex;\r\n    flex-direction: row;\r\n    justify-content: center;\r\n    align-content: center;\r\n    font-weight: bold;\r\n    background-color: #222f3e;\n}\r\n", ""]);
 
 // exports
 
@@ -39822,7 +39829,7 @@ var render = function() {
       _c("div", { staticClass: "container-fluid" }, [
         _c("div", { staticClass: "row" }, [
           _vm.ordonator != null
-            ? _c("div", { staticClass: "col-12 bg-primary text-white p-3" }, [
+            ? _c("div", { staticClass: "col-12 bg-primary text-white p-3 " }, [
                 _vm._v(
                   " Date despre Ordoantorul de credite: " +
                     _vm._s(_vm.ordonator.denumire)
@@ -39832,7 +39839,7 @@ var render = function() {
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "row" }, [
-          _c("div", { staticClass: "col-3 p-3" }, [
+          _c("div", { staticClass: "col-2 p-2" }, [
             _c("div", { staticClass: "container" }, [
               _c("div", { staticClass: "row-full" }, [
                 _c(
@@ -39917,8 +39924,16 @@ var render = function() {
             ])
           ]),
           _vm._v(" "),
-          _c("div", { staticClass: "col-9 p-2" }, [
-            _c("div", { staticClass: "container-fluid" }, [
+          _c("div", { staticClass: "col-10 p-1" }, [
+            _c("div", { staticClass: "container-fluid p-3" }, [
+              _vm.institutii == null || _vm.institutii.length == 0
+                ? _c("div", { staticClass: "row" }, [
+                    _c("div", { staticClass: "col-12 bg-warning p-2" }, [
+                      _vm._v("Nu exista institutii operate")
+                    ])
+                  ])
+                : _vm._e(),
+              _vm._v(" "),
               _vm.institutii != null
                 ? _c(
                     "div",
@@ -39926,13 +39941,13 @@ var render = function() {
                     _vm._l(_vm.institutii, function(institutie) {
                       return _c(
                         "div",
-                        { key: institutie.id, staticClass: "col-4 p-2" },
+                        { key: institutie.id, staticClass: "col-4 my-2" },
                         [
                           _c(
                             "div",
                             {
                               staticClass:
-                                "bg-secondary text-white text-center p-2 rounded"
+                                "header_institutie text-white text-center p-2 rounded"
                             },
                             [_vm._v(_vm._s(institutie.denumire))]
                           ),
@@ -39999,11 +40014,13 @@ var render = function() {
                           _vm._v(" "),
                           _vm._m(3, true),
                           _vm._v(" "),
+                          _vm._m(4, true),
+                          _vm._v(" "),
                           _c(
-                            "button",
+                            "a",
                             {
-                              staticClass:
-                                "btn btn-block btn-outline-primary btn-sm"
+                              staticClass: "btn btn-block btn-outline-primary",
+                              attrs: { href: "/institutii/" + institutie.id }
                             },
                             [_vm._v("Detalii Institutie")]
                           )
@@ -40022,6 +40039,16 @@ var render = function() {
   )
 }
 var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "box-institutie" }, [
+      _c("div", [_vm._v("Structuri subordonate")]),
+      _vm._v(" "),
+      _c("div", [_vm._v("0")])
+    ])
+  },
   function() {
     var _vm = this
     var _h = _vm.$createElement

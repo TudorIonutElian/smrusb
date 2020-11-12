@@ -3,10 +3,10 @@
     <top-nav></top-nav>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-12 bg-primary text-white p-3" v-if="ordonator != null"> Date despre Ordoantorul de credite: {{ordonator.denumire}}</div>
+            <div class="col-12 bg-primary text-white p-3 " v-if="ordonator != null"> Date despre Ordoantorul de credite: {{ordonator.denumire}}</div>
         </div>
         <div class="row">
-            <div class="col-3 p-3">
+            <div class="col-2 p-2">
                 <div class="container">
                     <div class="row-full">
                         <div class="col-12 p-2 text-center border border-primary">Denumirea Ordonatorului</div>
@@ -27,11 +27,14 @@
                     </div>
                 </div>
             </div>
-            <div class="col-9 p-2">
-                <div class="container-fluid">
+            <div class="col-10 p-1">
+                <div class="container-fluid p-3">
+                    <div class="row" v-if="institutii == null || institutii.length == 0">
+                        <div class="col-12 bg-warning p-2">Nu exista institutii operate</div>
+                    </div>
                     <div class="row" v-if="institutii != null">
-                        <div class="col-4 p-2" v-for="institutie in institutii" :key="institutie.id">
-                            <div class="bg-secondary text-white text-center p-2 rounded">{{ institutie.denumire }}</div>
+                        <div class="col-4 my-2" v-for="institutie in institutii" :key="institutie.id">
+                            <div class="header_institutie text-white text-center p-2 rounded">{{ institutie.denumire }}</div>
                             <div class="box-institutie">
                                 <div>Tipul Unitatii</div>
                                 <div>{{ institutie.TipInstitutie }}</div>
@@ -54,6 +57,10 @@
                                 <div class="bg-danger text-center text-white p-1" v-if="institutie.stare == 0">Unitate Radiata</div>
                             </div>
                             <div class="box-institutie">
+                                <div>Structuri subordonate</div>
+                                <div>0</div>
+                            </div>
+                            <div class="box-institutie">
                                 <div>Numar posturi aprobate</div>
                                 <div>0</div>
                             </div>
@@ -69,7 +76,7 @@
                                 <div>Numar Angajati</div>
                                 <div>0</div>
                             </div>
-                            <button class="btn btn-block btn-outline-primary btn-sm">Detalii Institutie</button>
+                            <a :href="'/institutii/' + institutie.id" class="btn btn-block btn-outline-primary">Detalii Institutie</a>
                         </div>
                     </div>
                 </div>
@@ -127,7 +134,7 @@ export default {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    align-self: center;
+    align-content: center;
     text-align: center;
     padding: 5px;
 }
@@ -140,5 +147,16 @@ export default {
 .box-institutie div:nth-child(1) {
     text-align: right;
     padding-right: 10%;
+}
+
+.header_institutie {
+    min-height: 65px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    font-weight: bold;
+    background-color: #222f3e;
+    ;
 }
 </style>
