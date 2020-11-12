@@ -14,7 +14,9 @@ Vue.use(VueRouter)
 
 
 import Home from './components/Home.vue';
+import Despre from './components/Despre.vue';
 import Ordonatori from './components/Ordonatori.vue';
+import Ordonator from './components/Ordonator.vue';
 
 const router = new VueRouter({
     mode: 'history',
@@ -22,8 +24,14 @@ const router = new VueRouter({
       // Route Home
       { path: '/', component: Home },
 
+      // Route despre
+      { path: '/despre', component: Despre },
+
       // Route Ordonatori de Credite
       { path: '/ordonatori', component: Ordonatori },
+
+      // Route Ordonator de Credite
+      { path: '/ordonator/:id', component: Ordonator },
     ]
   });
 

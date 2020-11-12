@@ -1,7 +1,6 @@
 <?php
 
 namespace Database\Seeders;
-
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -20,7 +19,9 @@ class DatabaseSeeder extends Seeder
                 LocalitatiSeeder::class,
                 FamiliiOcupationaleSeeder::class,
                 TipOrdonatoriSeeder::class,
-                OrdonatoriSeeder::class
+                OrdonatoriSeeder::class,
+                TipInstitutiiSeeder::class,
+                InstitutiiSeeder::class
             ]
         );
     }
