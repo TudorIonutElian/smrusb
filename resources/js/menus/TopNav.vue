@@ -83,6 +83,8 @@
                         <a class="dropdown-item" href="#">Ordonatori</a>
                         <a class="dropdown-item" href="#">Institutii publice</a>
                         <a class="dropdown-item" href="#">Angajati</a>
+                        <a class="dropdown-item" href="#">State</a>
+                        <a class="dropdown-item" href="#">Pozitii</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown">
@@ -100,6 +102,7 @@
                         Stat
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Vizualizare</a>
                         <a class="dropdown-item" href="#">Suplimentare</a>
                         <a class="dropdown-item" href="#">Radiere</a>
                     </div>
@@ -109,6 +112,7 @@
                         Functii
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Vizualizare</a>
                         <a class="dropdown-item" href="#">Suplimentare</a>
                         <a class="dropdown-item" href="#">Radiere</a>
                     </div>
@@ -118,6 +122,7 @@
                         Pozitii
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Vizualizare</a>
                         <a class="dropdown-item" href="#">Suplimentare</a>
                         <a class="dropdown-item" href="#">Radiere</a>
                     </div>

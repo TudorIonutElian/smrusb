@@ -2186,6 +2186,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 //
 //
 //
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
@@ -2354,6 +2355,11 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
 //
 //
 //
@@ -40684,6 +40690,18 @@ var staticRenderFns = [
                       "a",
                       { staticClass: "dropdown-item", attrs: { href: "#" } },
                       [_vm._v("Angajati")]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "a",
+                      { staticClass: "dropdown-item", attrs: { href: "#" } },
+                      [_vm._v("State")]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "a",
+                      { staticClass: "dropdown-item", attrs: { href: "#" } },
+                      [_vm._v("Pozitii")]
                     )
                   ]
                 )
@@ -40769,6 +40787,12 @@ var staticRenderFns = [
                     _c(
                       "a",
                       { staticClass: "dropdown-item", attrs: { href: "#" } },
+                      [_vm._v("Vizualizare")]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "a",
+                      { staticClass: "dropdown-item", attrs: { href: "#" } },
                       [_vm._v("Suplimentare")]
                     ),
                     _vm._v(" "),
@@ -40812,6 +40836,12 @@ var staticRenderFns = [
                     _c(
                       "a",
                       { staticClass: "dropdown-item", attrs: { href: "#" } },
+                      [_vm._v("Vizualizare")]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "a",
+                      { staticClass: "dropdown-item", attrs: { href: "#" } },
                       [_vm._v("Suplimentare")]
                     ),
                     _vm._v(" "),
@@ -40852,6 +40882,12 @@ var staticRenderFns = [
                     attrs: { "aria-labelledby": "navbarDropdown" }
                   },
                   [
+                    _c(
+                      "a",
+                      { staticClass: "dropdown-item", attrs: { href: "#" } },
+                      [_vm._v("Vizualizare")]
+                    ),
+                    _vm._v(" "),
                     _c(
                       "a",
                       { staticClass: "dropdown-item", attrs: { href: "#" } },
