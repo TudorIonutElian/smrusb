@@ -14,13 +14,8 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#">Regiuni</a>
                 </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Judete
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Arad</a>
-                    </div>
+                <li class="nav-item">
+                    <a class="nav-link" href="/judete">Judete</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -36,12 +31,12 @@
                     </div>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="/ordonatori" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Ordonatori
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="/ordonatori">Vezi Ordonatori</a>
-                        <a class="dropdown-item" href="#">Adauga Ordonator</a>
+                        <a class="dropdown-item" href="#" data-toggle="modal" data-target="#exampleModal">Adauga Ordonator</a>
                         <a class="dropdown-item" href="#">Sterge Ordonator</a>
                     </div>
                 </li>
@@ -139,7 +134,7 @@ export default {};
 
 <style scoped>
 .navbar {
-    background-color: #222f3e;
+    background-color: #3D405B;
 }
 
 .navbar-brand {
@@ -165,7 +160,7 @@ li.nav-item:hover {
 }
 
 li.nav-item:hover>.nav-link {
-    background-color: #48dbfb;
+    background-color: #E07A5F;
     color: #000;
     border-radius: 3px;
     text-decoration: none;
@@ -176,12 +171,12 @@ li.nav-item:hover>.nav-link {
 
 .dropdown-menu,
 .dropdown-item {
-    background-color: #222f3e;
+    background-color: #615D6C;
     color: #000;
 }
 
 .dropdown-item:hover {
-    background-color: #48dbfb;
+    background-color: #E07A5F;
     color: #000;
 }
 

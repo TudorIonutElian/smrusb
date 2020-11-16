@@ -27,7 +27,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-10 p-1">
+            <div class="col-9 p-1">
                 <div class="container-fluid p-3">
                     <div class="row" v-if="institutii == null || institutii.length == 0">
                         <div class="col-12 bg-warning p-2">Nu exista institutii operate</div>

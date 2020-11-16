@@ -10,4 +10,10 @@ class Ordonatori extends Model
     use HasFactory;
 
     protected $table="ordonatori";
+
+
+    /* ------------------ AFISARE LOCALITATI------------------*/
+    public function getJudet(){
+        return $this->belongsTo('App\Models\Judete', 'judet');
+    }
 }

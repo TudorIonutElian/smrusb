@@ -18,6 +18,7 @@ class JudeteCollection extends JsonResource
             'id'                    => $this->id,
             'denumireJudet'         => $this->denumire,
             'denumireRegiune'       => $this->getRegiune->denumire,
+            'numarOrdonatori'       => count($this->getOrdonatori),
             'localitati'            => $this->getLocalitati
         ];
     }

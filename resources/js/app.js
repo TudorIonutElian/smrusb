@@ -15,6 +15,7 @@ Vue.use(VueRouter)
 
 import Home from './components/Home.vue';
 import Despre from './components/Despre.vue';
+import Judete from './components/Judete.vue';
 import Ordonatori from './components/Ordonatori.vue';
 import Ordonator from './components/Ordonator.vue';
 
@@ -26,6 +27,9 @@ const router = new VueRouter({
 
       // Route despre
       { path: '/despre', component: Despre },
+
+      // Route Judete
+      { path: '/judete', component: Judete },
 
       // Route Ordonatori de Credite
       { path: '/ordonatori', component: Ordonatori },

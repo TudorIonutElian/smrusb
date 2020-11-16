@@ -9,7 +9,7 @@
 
 :root {
   --blue: #3490dc;
-  --indigo: #6574cd;
+  --indigo: #3D405B;
   --purple: #9561e2;
   --pink: #f66d9b;
   --red: #e3342f;
@@ -10897,5 +10897,36 @@ a.text-dark:focus {
     color: inherit;
     border-color: #dee2e6;
   }
+}
+
+.orange-label {
+  background-color: #E07A5F;
+}
+
+.orange-label-slower {
+  background-color: #F2CC8F;
+}
+
+.orange-label-slower:hover {
+  background-color: #E07A5F;
+}
+
+.box-institutie {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: center;
+  text-align: center;
+  padding: 5px;
+}
+
+.box-institutie div {
+  align-content: flex-end;
+  width: 50%;
+}
+
+.box-institutie div:nth-child(1) {
+  text-align: right;
+  padding-right: 10%;
 }
 

@@ -47,8 +47,8 @@ Route::get('/ordonatori/{id}', function ($id) {
         ->select('ordonatori.id', 'ordonatori.denumire', 'tip_ordonatori.denumire as tip', 'ordonatori.data_infiintare', 'ordonatori.stare')
         ->get();
 
-    $institutii = DB::table('institutii')->where('institutii.ordonator', '=', $id)
-        ->join('ordonatori', 'institutii.ordonator', '=', 'ordonatori.id')
+    $institutii = DB::table('institutii')->where('institutii.ordonator_principal', '=', $id)
+        ->join('ordonatori', 'institutii.ordonator_principal', '=', 'ordonatori.id')
         ->join('tip_institutii', 'institutii.tip_institutie', '=', 'tip_institutii.id')
         ->join('judete', 'institutii.judet', '=', 'judete.id')
         ->join('localitati', 'institutii.localitate', '=', 'localitati.id')
