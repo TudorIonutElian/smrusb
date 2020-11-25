@@ -20,12 +20,10 @@
         "m-6": "php artisan migrate --path=/database/migrations/SMRUSB_6_Institutii",
         "m-7": "php artisan migrate --path=/database/migrations/SMRUSB_7_Angajati",
         "m-8": "php artisan migrate --path=/database/migrations/SMRUSB_8_StatOrganizare",
-        
-        "m-1-8": "npm run m-0 && npm run m-1 && npm run m-2 && npm run m-3 && npm run m-4 && npm run m-5 && npm run m-6 && npm run m-7 && npm run m-8",
-        "m-9-16": "npm run m-9 && npm run m-10 && npm run m-11 && npm run m-12 && npm run m-13 && npm run m-14 && npm run m-15 && npm run m-16",
-
+        "m-9": "php artisan migrate --path=/database/migrations/SMRUSB_9_Adrese",
         "m-seed": "php artisan db:seed",
-        "m-all": "npm run m-1-8 && npm run m-seed"
+        
+        "m-all-seed": "npm run m-0 && npm run m-1 && npm run m-2 && npm run m-3 && npm run m-4 && npm run m-5 && npm run m-6 && npm run m-7 && npm run m-8 && npm run m-9 && npm run m-seed"
     },
     "devDependencies": {
         "axios": "^0.19.2",

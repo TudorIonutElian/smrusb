@@ -1,5 +1,5 @@
 <template>
-<div id="navbar-menu">
+<div id="navbar-menu" class="nav-sticky">
     <nav class="navbar navbar-expand-lg">
         <a class="navbar-brand" href="/">SMRUSB</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -136,7 +136,6 @@ export default {};
 .navbar {
     background-color: #3D405B;
 }
-
 .navbar-brand {
     font-family: "Roboto", sans-serif;
     font-weight: 900;
@@ -144,21 +143,17 @@ export default {};
     color: #fff;
     text-decoration: none;
 }
-
 .navbar-brand:hover {
     text-decoration: none;
     color: #48dbfb;
     transition: color 0.5s;
 }
-
 li.nav-item a {
     color: #fff;
 }
-
 li.nav-item:hover {
     color: #000;
 }
-
 li.nav-item:hover>.nav-link {
     background-color: #E07A5F;
     color: #000;
@@ -168,19 +163,24 @@ li.nav-item:hover>.nav-link {
     animation-direction: alternate;
     animation-timing-function: ease-in-out;
 }
-
 .dropdown-menu,
 .dropdown-item {
     background-color: #615D6C;
     color: #000;
 }
-
 .dropdown-item:hover {
     background-color: #E07A5F;
     color: #000;
 }
-
 #navbar-menu {
     height: 5.5%;
+}
+
+.nav-sticky{
+    position: fixed;
+    top: 0;
+    margin-bottom: 20px;
+    width: 100%;
+    z-index: 1000;
 }
 </style>

@@ -34,7 +34,7 @@
                     </div>
                     <div class="row" v-if="institutii != null">
                         <div class="col-4 my-2" v-for="institutie in institutii" :key="institutie.id">
-                            <div class="header_institutie text-white text-center p-2 rounded">{{ institutie.denumire }}</div>
+                            <h5 class="card-title text-center p-2 orange-label text-white">{{ institutie.denumire }}</h5>
                             <div class="box-institutie">
                                 <div>Tipul Unitatii</div>
                                 <div>{{ institutie.TipInstitutie }}</div>

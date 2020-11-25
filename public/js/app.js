@@ -2064,8 +2064,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-// Importinn other components
+// Importin other components
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -2359,6 +2358,8 @@ function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try
 
 function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
 
+//
+//
 //
 //
 //
@@ -7112,7 +7113,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n.bg-main[data-v-3183e47e] {\r\n    background-color: #222f3e;\r\n    color: #fff;\n}\r\n", ""]);
+exports.push([module.i, "\n.bg-main[data-v-3183e47e] {\r\n    background-color: #222f3e;\r\n    color: #fff;\n}\n.modal-body[data-v-3183e47e]{\r\n    width: 300px;\n}\r\n", ""]);
 
 // exports
 
@@ -7150,7 +7151,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n.navbar[data-v-a7036bb2] {\r\n    background-color: #3D405B;\n}\n.navbar-brand[data-v-a7036bb2] {\r\n    font-family: \"Roboto\", sans-serif;\r\n    font-weight: 900;\r\n    font-size: 18px;\r\n    color: #fff;\r\n    text-decoration: none;\n}\n.navbar-brand[data-v-a7036bb2]:hover {\r\n    text-decoration: none;\r\n    color: #48dbfb;\r\n    transition: color 0.5s;\n}\nli.nav-item a[data-v-a7036bb2] {\r\n    color: #fff;\n}\nli.nav-item[data-v-a7036bb2]:hover {\r\n    color: #000;\n}\nli.nav-item:hover>.nav-link[data-v-a7036bb2] {\r\n    background-color: #E07A5F;\r\n    color: #000;\r\n    border-radius: 3px;\r\n    text-decoration: none;\r\n    transition: background-color 0.5s;\r\n    -webkit-animation-direction: alternate;\r\n            animation-direction: alternate;\r\n    -webkit-animation-timing-function: ease-in-out;\r\n            animation-timing-function: ease-in-out;\n}\n.dropdown-menu[data-v-a7036bb2],\r\n.dropdown-item[data-v-a7036bb2] {\r\n    background-color: #615D6C;\r\n    color: #000;\n}\n.dropdown-item[data-v-a7036bb2]:hover {\r\n    background-color: #E07A5F;\r\n    color: #000;\n}\n#navbar-menu[data-v-a7036bb2] {\r\n    height: 5.5%;\n}\r\n", ""]);
+exports.push([module.i, "\n.navbar[data-v-a7036bb2] {\r\n    background-color: #3D405B;\n}\n.navbar-brand[data-v-a7036bb2] {\r\n    font-family: \"Roboto\", sans-serif;\r\n    font-weight: 900;\r\n    font-size: 18px;\r\n    color: #fff;\r\n    text-decoration: none;\n}\n.navbar-brand[data-v-a7036bb2]:hover {\r\n    text-decoration: none;\r\n    color: #48dbfb;\r\n    transition: color 0.5s;\n}\nli.nav-item a[data-v-a7036bb2] {\r\n    color: #fff;\n}\nli.nav-item[data-v-a7036bb2]:hover {\r\n    color: #000;\n}\nli.nav-item:hover>.nav-link[data-v-a7036bb2] {\r\n    background-color: #E07A5F;\r\n    color: #000;\r\n    border-radius: 3px;\r\n    text-decoration: none;\r\n    transition: background-color 0.5s;\r\n    -webkit-animation-direction: alternate;\r\n            animation-direction: alternate;\r\n    -webkit-animation-timing-function: ease-in-out;\r\n            animation-timing-function: ease-in-out;\n}\n.dropdown-menu[data-v-a7036bb2],\r\n.dropdown-item[data-v-a7036bb2] {\r\n    background-color: #615D6C;\r\n    color: #000;\n}\n.dropdown-item[data-v-a7036bb2]:hover {\r\n    background-color: #E07A5F;\r\n    color: #000;\n}\n#navbar-menu[data-v-a7036bb2] {\r\n    height: 5.5%;\n}\n.nav-sticky[data-v-a7036bb2]{\r\n    position: fixed;\r\n    top: 0;\r\n    margin-bottom: 20px;\r\n    width: 100%;\r\n    z-index: 1000;\n}\r\n", ""]);
 
 // exports
 
@@ -40003,11 +40004,7 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c(
-    "div",
-    [_c("top-nav"), _vm._v(" "), _c("home-jumbotron"), _vm._v(" "), _vm._m(0)],
-    1
-  )
+  return _c("div", [_c("top-nav"), _vm._v(" "), _vm._m(0)], 1)
 }
 var staticRenderFns = [
   function() {
@@ -40015,9 +40012,7 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "container-fluid" }, [
-      _c("div", { staticClass: "row mt-3" }, [
-        _c("div", { staticClass: "col-12" })
-      ])
+      _c("div", { staticClass: "row" }, [_c("div", { staticClass: "col-12" })])
     ])
   }
 ]
@@ -40275,10 +40270,10 @@ var render = function() {
                         { key: institutie.id, staticClass: "col-4 my-2" },
                         [
                           _c(
-                            "div",
+                            "h5",
                             {
                               staticClass:
-                                "header_institutie text-white text-center p-2 rounded"
+                                "card-title text-center p-2 orange-label text-white"
                             },
                             [_vm._v(_vm._s(institutie.denumire))]
                           ),
@@ -40524,82 +40519,80 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "row my-2" }, [
-      _c(
-        "div",
-        {
-          staticClass: "modal fade",
-          attrs: {
-            id: "exampleModal",
-            tabindex: "-1",
-            role: "dialog",
-            "aria-labelledby": "exampleModalLabel",
-            "aria-hidden": "true"
-          }
-        },
-        [
-          _c(
-            "div",
-            { staticClass: "modal-dialog", attrs: { role: "document" } },
-            [
-              _c("div", { staticClass: "modal-content" }, [
-                _c("div", { staticClass: "modal-header" }, [
-                  _c(
-                    "h5",
-                    {
-                      staticClass: "modal-title",
-                      attrs: { id: "exampleModalLabel" }
-                    },
-                    [_vm._v("Adaugare Ordonator de credite")]
-                  ),
+      _c("div", { staticClass: "container" }, [
+        _c(
+          "div",
+          {
+            staticClass: "modal fade",
+            attrs: {
+              id: "exampleModal",
+              tabindex: "-1",
+              role: "dialog",
+              "aria-labelledby": "exampleModalLabel",
+              "aria-hidden": "true"
+            }
+          },
+          [
+            _c(
+              "div",
+              { staticClass: "modal-dialog", attrs: { role: "document" } },
+              [
+                _c("div", { staticClass: "modal-content" }, [
+                  _c("div", { staticClass: "modal-header" }, [
+                    _c(
+                      "h5",
+                      {
+                        staticClass: "modal-title",
+                        attrs: { id: "exampleModalLabel" }
+                      },
+                      [_vm._v("Adaugare Ordonator de credite")]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "button",
+                      {
+                        staticClass: "close",
+                        attrs: {
+                          type: "button",
+                          "data-dismiss": "modal",
+                          "aria-label": "Close"
+                        }
+                      },
+                      [
+                        _c("span", { attrs: { "aria-hidden": "true" } }, [
+                          _vm._v("×")
+                        ])
+                      ]
+                    )
+                  ]),
                   _vm._v(" "),
-                  _c(
-                    "button",
-                    {
-                      staticClass: "close",
-                      attrs: {
-                        type: "button",
-                        "data-dismiss": "modal",
-                        "aria-label": "Close"
-                      }
-                    },
-                    [
-                      _c("span", { attrs: { "aria-hidden": "true" } }, [
-                        _vm._v("×")
-                      ])
-                    ]
-                  )
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "modal-body" }, [
-                  _vm._v(
-                    "\r\n                            ...\r\n                        "
-                  )
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "modal-footer" }, [
-                  _c(
-                    "button",
-                    {
-                      staticClass: "btn btn-danger",
-                      attrs: { type: "button", "data-dismiss": "modal" }
-                    },
-                    [_vm._v("Inchide")]
-                  ),
+                  _c("div", { staticClass: "modal-body" }),
                   _vm._v(" "),
-                  _c(
-                    "button",
-                    {
-                      staticClass: "btn btn-success",
-                      attrs: { type: "button" }
-                    },
-                    [_vm._v("Salveaza Ordonator")]
-                  )
+                  _c("div", { staticClass: "modal-footer" }, [
+                    _c(
+                      "button",
+                      {
+                        staticClass: "btn btn-danger",
+                        attrs: { type: "button", "data-dismiss": "modal" }
+                      },
+                      [_vm._v("Inchide")]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "button",
+                      {
+                        staticClass: "btn btn-success",
+                        attrs: { type: "button" }
+                      },
+                      [_vm._v("Salveaza Ordonator")]
+                    )
+                  ])
                 ])
-              ])
-            ]
-          )
-        ]
-      )
+              ]
+            )
+          ]
+        )
+      ])
     ])
   }
 ]
@@ -40632,7 +40625,7 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "container-fluid jumbotron" }, [
-      _c("div", {}, [
+      _c("div", { staticClass: "mt-2" }, [
         _c("h1", { staticClass: "display-4" }, [_vm._v("SMRUSB")]),
         _vm._v(" "),
         _c("p", { staticClass: "lead" }, [
@@ -40730,596 +40723,600 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { attrs: { id: "navbar-menu" } }, [
-      _c("nav", { staticClass: "navbar navbar-expand-lg" }, [
-        _c("a", { staticClass: "navbar-brand", attrs: { href: "/" } }, [
-          _vm._v("SMRUSB")
-        ]),
-        _vm._v(" "),
-        _c(
-          "button",
-          {
-            staticClass: "navbar-toggler",
-            attrs: {
-              type: "button",
-              "data-toggle": "collapse",
-              "data-target": "#navbarSupportedContent",
-              "aria-controls": "navbarSupportedContent",
-              "aria-expanded": "false",
-              "aria-label": "Toggle navigation"
-            }
-          },
-          [_c("span", { staticClass: "navbar-toggler-icon" })]
-        ),
-        _vm._v(" "),
-        _c(
-          "div",
-          {
-            staticClass: "collapse navbar-collapse",
-            attrs: { id: "navbarSupportedContent" }
-          },
-          [
-            _c("ul", { staticClass: "navbar-nav mr-auto" }, [
-              _c("li", { staticClass: "nav-item" }, [
-                _c(
-                  "a",
-                  { staticClass: "nav-link", attrs: { href: "/despre" } },
-                  [_vm._v("Despre SMRUSB")]
-                )
-              ]),
-              _vm._v(" "),
-              _c("li", { staticClass: "nav-item" }, [
-                _c("a", { staticClass: "nav-link", attrs: { href: "#" } }, [
-                  _vm._v("Regiuni")
+    return _c(
+      "div",
+      { staticClass: "nav-sticky", attrs: { id: "navbar-menu" } },
+      [
+        _c("nav", { staticClass: "navbar navbar-expand-lg" }, [
+          _c("a", { staticClass: "navbar-brand", attrs: { href: "/" } }, [
+            _vm._v("SMRUSB")
+          ]),
+          _vm._v(" "),
+          _c(
+            "button",
+            {
+              staticClass: "navbar-toggler",
+              attrs: {
+                type: "button",
+                "data-toggle": "collapse",
+                "data-target": "#navbarSupportedContent",
+                "aria-controls": "navbarSupportedContent",
+                "aria-expanded": "false",
+                "aria-label": "Toggle navigation"
+              }
+            },
+            [_c("span", { staticClass: "navbar-toggler-icon" })]
+          ),
+          _vm._v(" "),
+          _c(
+            "div",
+            {
+              staticClass: "collapse navbar-collapse",
+              attrs: { id: "navbarSupportedContent" }
+            },
+            [
+              _c("ul", { staticClass: "navbar-nav mr-auto" }, [
+                _c("li", { staticClass: "nav-item" }, [
+                  _c(
+                    "a",
+                    { staticClass: "nav-link", attrs: { href: "/despre" } },
+                    [_vm._v("Despre SMRUSB")]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("li", { staticClass: "nav-item" }, [
+                  _c("a", { staticClass: "nav-link", attrs: { href: "#" } }, [
+                    _vm._v("Regiuni")
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("li", { staticClass: "nav-item" }, [
+                  _c(
+                    "a",
+                    { staticClass: "nav-link", attrs: { href: "/judete" } },
+                    [_vm._v("Judete")]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("li", { staticClass: "nav-item dropdown" }, [
+                  _c(
+                    "a",
+                    {
+                      staticClass: "nav-link dropdown-toggle",
+                      attrs: {
+                        href: "#",
+                        id: "navbarDropdown",
+                        role: "button",
+                        "data-toggle": "dropdown",
+                        "aria-haspopup": "true",
+                        "aria-expanded": "false"
+                      }
+                    },
+                    [
+                      _vm._v(
+                        "\r\n                        Familii ocupationale\r\n                    "
+                      )
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass: "dropdown-menu",
+                      attrs: { "aria-labelledby": "navbarDropdown" }
+                    },
+                    [
+                      _c(
+                        "a",
+                        { staticClass: "dropdown-item", attrs: { href: "#" } },
+                        [_vm._v("I - Invatamant")]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "a",
+                        { staticClass: "dropdown-item", attrs: { href: "#" } },
+                        [_vm._v("II - Sanatate si asistenta sociala")]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "a",
+                        { staticClass: "dropdown-item", attrs: { href: "#" } },
+                        [_vm._v("III - Cultura, unitati de cultura")]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "a",
+                        { staticClass: "dropdown-item", attrs: { href: "#" } },
+                        [_vm._v("IV - Diplomatie")]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "a",
+                        { staticClass: "dropdown-item", attrs: { href: "#" } },
+                        [_vm._v("V - Justitie si Curtea Constitutionala")]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "a",
+                        { staticClass: "dropdown-item", attrs: { href: "#" } },
+                        [
+                          _vm._v(
+                            "VI - Aparare, ordine publica si securitate nationala"
+                          )
+                        ]
+                      )
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("li", { staticClass: "nav-item dropdown" }, [
+                  _c(
+                    "a",
+                    {
+                      staticClass: "nav-link dropdown-toggle",
+                      attrs: {
+                        href: "/ordonatori",
+                        id: "navbarDropdown",
+                        role: "button",
+                        "data-toggle": "dropdown",
+                        "aria-haspopup": "true",
+                        "aria-expanded": "false"
+                      }
+                    },
+                    [
+                      _vm._v(
+                        "\r\n                        Ordonatori\r\n                    "
+                      )
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass: "dropdown-menu",
+                      attrs: { "aria-labelledby": "navbarDropdown" }
+                    },
+                    [
+                      _c(
+                        "a",
+                        {
+                          staticClass: "dropdown-item",
+                          attrs: { href: "/ordonatori" }
+                        },
+                        [_vm._v("Vezi Ordonatori")]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "a",
+                        {
+                          staticClass: "dropdown-item",
+                          attrs: {
+                            href: "#",
+                            "data-toggle": "modal",
+                            "data-target": "#exampleModal"
+                          }
+                        },
+                        [_vm._v("Adauga Ordonator")]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "a",
+                        { staticClass: "dropdown-item", attrs: { href: "#" } },
+                        [_vm._v("Sterge Ordonator")]
+                      )
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("li", { staticClass: "nav-item dropdown" }, [
+                  _c(
+                    "a",
+                    {
+                      staticClass: "nav-link dropdown-toggle",
+                      attrs: {
+                        href: "#",
+                        id: "navbarDropdown",
+                        role: "button",
+                        "data-toggle": "dropdown",
+                        "aria-haspopup": "true",
+                        "aria-expanded": "false"
+                      }
+                    },
+                    [
+                      _vm._v(
+                        "\r\n                        Institutii Publice\r\n                    "
+                      )
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass: "dropdown-menu",
+                      attrs: { "aria-labelledby": "navbarDropdown" }
+                    },
+                    [
+                      _c(
+                        "a",
+                        { staticClass: "dropdown-item", attrs: { href: "#" } },
+                        [_vm._v("Adauga")]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "a",
+                        { staticClass: "dropdown-item", attrs: { href: "#" } },
+                        [_vm._v("Sterge")]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "a",
+                        { staticClass: "dropdown-item", attrs: { href: "#" } },
+                        [_vm._v("Vizualizare")]
+                      )
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("li", { staticClass: "nav-item dropdown" }, [
+                  _c(
+                    "a",
+                    {
+                      staticClass: "nav-link dropdown-toggle",
+                      attrs: {
+                        href: "#",
+                        id: "navbarDropdown",
+                        role: "button",
+                        "data-toggle": "dropdown",
+                        "aria-haspopup": "true",
+                        "aria-expanded": "false"
+                      }
+                    },
+                    [
+                      _vm._v(
+                        "\r\n                        Angajati\r\n                    "
+                      )
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass: "dropdown-menu",
+                      attrs: { "aria-labelledby": "navbarDropdown" }
+                    },
+                    [
+                      _c(
+                        "a",
+                        { staticClass: "dropdown-item", attrs: { href: "#" } },
+                        [_vm._v("Adauga")]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "a",
+                        { staticClass: "dropdown-item", attrs: { href: "#" } },
+                        [_vm._v("Sterge")]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "a",
+                        { staticClass: "dropdown-item", attrs: { href: "#" } },
+                        [_vm._v("Vizualizare")]
+                      )
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("li", { staticClass: "nav-item dropdown" }, [
+                  _c(
+                    "a",
+                    {
+                      staticClass: "nav-link dropdown-toggle",
+                      attrs: {
+                        href: "#",
+                        id: "navbarDropdown",
+                        role: "button",
+                        "data-toggle": "dropdown",
+                        "aria-haspopup": "true",
+                        "aria-expanded": "false"
+                      }
+                    },
+                    [
+                      _vm._v(
+                        "\r\n                        Situatii\r\n                    "
+                      )
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass: "dropdown-menu",
+                      attrs: { "aria-labelledby": "navbarDropdown" }
+                    },
+                    [
+                      _c(
+                        "a",
+                        { staticClass: "dropdown-item", attrs: { href: "#" } },
+                        [_vm._v("Situatii profesionale")]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "a",
+                        { staticClass: "dropdown-item", attrs: { href: "#" } },
+                        [_vm._v("Situatii financiare")]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "a",
+                        { staticClass: "dropdown-item", attrs: { href: "#" } },
+                        [_vm._v("Situatii invatamant")]
+                      )
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("li", { staticClass: "nav-item dropdown" }, [
+                  _c(
+                    "a",
+                    {
+                      staticClass: "nav-link dropdown-toggle",
+                      attrs: {
+                        href: "#",
+                        id: "navbarDropdown",
+                        role: "button",
+                        "data-toggle": "dropdown",
+                        "aria-haspopup": "true",
+                        "aria-expanded": "false"
+                      }
+                    },
+                    [
+                      _vm._v(
+                        "\r\n                        Istoric\r\n                    "
+                      )
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass: "dropdown-menu",
+                      attrs: { "aria-labelledby": "navbarDropdown" }
+                    },
+                    [
+                      _c(
+                        "a",
+                        { staticClass: "dropdown-item", attrs: { href: "#" } },
+                        [_vm._v("Ordonatori")]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "a",
+                        { staticClass: "dropdown-item", attrs: { href: "#" } },
+                        [_vm._v("Institutii publice")]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "a",
+                        { staticClass: "dropdown-item", attrs: { href: "#" } },
+                        [_vm._v("Angajati")]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "a",
+                        { staticClass: "dropdown-item", attrs: { href: "#" } },
+                        [_vm._v("State")]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "a",
+                        { staticClass: "dropdown-item", attrs: { href: "#" } },
+                        [_vm._v("Pozitii")]
+                      )
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("li", { staticClass: "nav-item dropdown" }, [
+                  _c(
+                    "a",
+                    {
+                      staticClass: "nav-link dropdown-toggle",
+                      attrs: {
+                        href: "#",
+                        id: "navbarDropdown",
+                        role: "button",
+                        "data-toggle": "dropdown",
+                        "aria-haspopup": "true",
+                        "aria-expanded": "false"
+                      }
+                    },
+                    [
+                      _vm._v(
+                        "\r\n                        Documente\r\n                    "
+                      )
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass: "dropdown-menu",
+                      attrs: { "aria-labelledby": "navbarDropdown" }
+                    },
+                    [
+                      _c(
+                        "a",
+                        { staticClass: "dropdown-item", attrs: { href: "#" } },
+                        [_vm._v("Adeverinta angajat")]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "a",
+                        { staticClass: "dropdown-item", attrs: { href: "#" } },
+                        [_vm._v("Adeverinta salarii")]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "a",
+                        { staticClass: "dropdown-item", attrs: { href: "#" } },
+                        [_vm._v("Adeverinta vechime")]
+                      )
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("li", { staticClass: "nav-item dropdown" }, [
+                  _c(
+                    "a",
+                    {
+                      staticClass: "nav-link dropdown-toggle",
+                      attrs: {
+                        href: "#",
+                        id: "navbarDropdown",
+                        role: "button",
+                        "data-toggle": "dropdown",
+                        "aria-haspopup": "true",
+                        "aria-expanded": "false"
+                      }
+                    },
+                    [
+                      _vm._v(
+                        "\r\n                        Stat\r\n                    "
+                      )
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass: "dropdown-menu",
+                      attrs: { "aria-labelledby": "navbarDropdown" }
+                    },
+                    [
+                      _c(
+                        "a",
+                        { staticClass: "dropdown-item", attrs: { href: "#" } },
+                        [_vm._v("Vizualizare")]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "a",
+                        { staticClass: "dropdown-item", attrs: { href: "#" } },
+                        [_vm._v("Suplimentare")]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "a",
+                        { staticClass: "dropdown-item", attrs: { href: "#" } },
+                        [_vm._v("Radiere")]
+                      )
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("li", { staticClass: "nav-item dropdown" }, [
+                  _c(
+                    "a",
+                    {
+                      staticClass: "nav-link dropdown-toggle",
+                      attrs: {
+                        href: "#",
+                        id: "navbarDropdown",
+                        role: "button",
+                        "data-toggle": "dropdown",
+                        "aria-haspopup": "true",
+                        "aria-expanded": "false"
+                      }
+                    },
+                    [
+                      _vm._v(
+                        "\r\n                        Functii\r\n                    "
+                      )
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass: "dropdown-menu",
+                      attrs: { "aria-labelledby": "navbarDropdown" }
+                    },
+                    [
+                      _c(
+                        "a",
+                        { staticClass: "dropdown-item", attrs: { href: "#" } },
+                        [_vm._v("Vizualizare")]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "a",
+                        { staticClass: "dropdown-item", attrs: { href: "#" } },
+                        [_vm._v("Suplimentare")]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "a",
+                        { staticClass: "dropdown-item", attrs: { href: "#" } },
+                        [_vm._v("Radiere")]
+                      )
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("li", { staticClass: "nav-item dropdown" }, [
+                  _c(
+                    "a",
+                    {
+                      staticClass: "nav-link dropdown-toggle",
+                      attrs: {
+                        href: "#",
+                        id: "navbarDropdown",
+                        role: "button",
+                        "data-toggle": "dropdown",
+                        "aria-haspopup": "true",
+                        "aria-expanded": "false"
+                      }
+                    },
+                    [
+                      _vm._v(
+                        "\r\n                        Pozitii\r\n                    "
+                      )
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass: "dropdown-menu",
+                      attrs: { "aria-labelledby": "navbarDropdown" }
+                    },
+                    [
+                      _c(
+                        "a",
+                        { staticClass: "dropdown-item", attrs: { href: "#" } },
+                        [_vm._v("Vizualizare")]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "a",
+                        { staticClass: "dropdown-item", attrs: { href: "#" } },
+                        [_vm._v("Suplimentare")]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "a",
+                        { staticClass: "dropdown-item", attrs: { href: "#" } },
+                        [_vm._v("Radiere")]
+                      )
+                    ]
+                  )
                 ])
-              ]),
-              _vm._v(" "),
-              _c("li", { staticClass: "nav-item" }, [
-                _c(
-                  "a",
-                  { staticClass: "nav-link", attrs: { href: "/judete" } },
-                  [_vm._v("Judete")]
-                )
-              ]),
-              _vm._v(" "),
-              _c("li", { staticClass: "nav-item dropdown" }, [
-                _c(
-                  "a",
-                  {
-                    staticClass: "nav-link dropdown-toggle",
-                    attrs: {
-                      href: "#",
-                      id: "navbarDropdown",
-                      role: "button",
-                      "data-toggle": "dropdown",
-                      "aria-haspopup": "true",
-                      "aria-expanded": "false"
-                    }
-                  },
-                  [
-                    _vm._v(
-                      "\r\n                        Familii ocupationale\r\n                    "
-                    )
-                  ]
-                ),
-                _vm._v(" "),
-                _c(
-                  "div",
-                  {
-                    staticClass: "dropdown-menu",
-                    attrs: { "aria-labelledby": "navbarDropdown" }
-                  },
-                  [
-                    _c(
-                      "a",
-                      { staticClass: "dropdown-item", attrs: { href: "#" } },
-                      [_vm._v("I - Invatamant")]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "a",
-                      { staticClass: "dropdown-item", attrs: { href: "#" } },
-                      [_vm._v("II - Sanatate si asistenta sociala")]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "a",
-                      { staticClass: "dropdown-item", attrs: { href: "#" } },
-                      [_vm._v("III - Cultura, unitati de cultura")]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "a",
-                      { staticClass: "dropdown-item", attrs: { href: "#" } },
-                      [_vm._v("IV - Diplomatie")]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "a",
-                      { staticClass: "dropdown-item", attrs: { href: "#" } },
-                      [_vm._v("V - Justitie si Curtea Constitutionala")]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "a",
-                      { staticClass: "dropdown-item", attrs: { href: "#" } },
-                      [
-                        _vm._v(
-                          "VI - Aparare, ordine publica si securitate nationala"
-                        )
-                      ]
-                    )
-                  ]
-                )
-              ]),
-              _vm._v(" "),
-              _c("li", { staticClass: "nav-item dropdown" }, [
-                _c(
-                  "a",
-                  {
-                    staticClass: "nav-link dropdown-toggle",
-                    attrs: {
-                      href: "/ordonatori",
-                      id: "navbarDropdown",
-                      role: "button",
-                      "data-toggle": "dropdown",
-                      "aria-haspopup": "true",
-                      "aria-expanded": "false"
-                    }
-                  },
-                  [
-                    _vm._v(
-                      "\r\n                        Ordonatori\r\n                    "
-                    )
-                  ]
-                ),
-                _vm._v(" "),
-                _c(
-                  "div",
-                  {
-                    staticClass: "dropdown-menu",
-                    attrs: { "aria-labelledby": "navbarDropdown" }
-                  },
-                  [
-                    _c(
-                      "a",
-                      {
-                        staticClass: "dropdown-item",
-                        attrs: { href: "/ordonatori" }
-                      },
-                      [_vm._v("Vezi Ordonatori")]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "a",
-                      {
-                        staticClass: "dropdown-item",
-                        attrs: {
-                          href: "#",
-                          "data-toggle": "modal",
-                          "data-target": "#exampleModal"
-                        }
-                      },
-                      [_vm._v("Adauga Ordonator")]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "a",
-                      { staticClass: "dropdown-item", attrs: { href: "#" } },
-                      [_vm._v("Sterge Ordonator")]
-                    )
-                  ]
-                )
-              ]),
-              _vm._v(" "),
-              _c("li", { staticClass: "nav-item dropdown" }, [
-                _c(
-                  "a",
-                  {
-                    staticClass: "nav-link dropdown-toggle",
-                    attrs: {
-                      href: "#",
-                      id: "navbarDropdown",
-                      role: "button",
-                      "data-toggle": "dropdown",
-                      "aria-haspopup": "true",
-                      "aria-expanded": "false"
-                    }
-                  },
-                  [
-                    _vm._v(
-                      "\r\n                        Institutii Publice\r\n                    "
-                    )
-                  ]
-                ),
-                _vm._v(" "),
-                _c(
-                  "div",
-                  {
-                    staticClass: "dropdown-menu",
-                    attrs: { "aria-labelledby": "navbarDropdown" }
-                  },
-                  [
-                    _c(
-                      "a",
-                      { staticClass: "dropdown-item", attrs: { href: "#" } },
-                      [_vm._v("Adauga")]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "a",
-                      { staticClass: "dropdown-item", attrs: { href: "#" } },
-                      [_vm._v("Sterge")]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "a",
-                      { staticClass: "dropdown-item", attrs: { href: "#" } },
-                      [_vm._v("Vizualizare")]
-                    )
-                  ]
-                )
-              ]),
-              _vm._v(" "),
-              _c("li", { staticClass: "nav-item dropdown" }, [
-                _c(
-                  "a",
-                  {
-                    staticClass: "nav-link dropdown-toggle",
-                    attrs: {
-                      href: "#",
-                      id: "navbarDropdown",
-                      role: "button",
-                      "data-toggle": "dropdown",
-                      "aria-haspopup": "true",
-                      "aria-expanded": "false"
-                    }
-                  },
-                  [
-                    _vm._v(
-                      "\r\n                        Angajati\r\n                    "
-                    )
-                  ]
-                ),
-                _vm._v(" "),
-                _c(
-                  "div",
-                  {
-                    staticClass: "dropdown-menu",
-                    attrs: { "aria-labelledby": "navbarDropdown" }
-                  },
-                  [
-                    _c(
-                      "a",
-                      { staticClass: "dropdown-item", attrs: { href: "#" } },
-                      [_vm._v("Adauga")]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "a",
-                      { staticClass: "dropdown-item", attrs: { href: "#" } },
-                      [_vm._v("Sterge")]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "a",
-                      { staticClass: "dropdown-item", attrs: { href: "#" } },
-                      [_vm._v("Vizualizare")]
-                    )
-                  ]
-                )
-              ]),
-              _vm._v(" "),
-              _c("li", { staticClass: "nav-item dropdown" }, [
-                _c(
-                  "a",
-                  {
-                    staticClass: "nav-link dropdown-toggle",
-                    attrs: {
-                      href: "#",
-                      id: "navbarDropdown",
-                      role: "button",
-                      "data-toggle": "dropdown",
-                      "aria-haspopup": "true",
-                      "aria-expanded": "false"
-                    }
-                  },
-                  [
-                    _vm._v(
-                      "\r\n                        Situatii\r\n                    "
-                    )
-                  ]
-                ),
-                _vm._v(" "),
-                _c(
-                  "div",
-                  {
-                    staticClass: "dropdown-menu",
-                    attrs: { "aria-labelledby": "navbarDropdown" }
-                  },
-                  [
-                    _c(
-                      "a",
-                      { staticClass: "dropdown-item", attrs: { href: "#" } },
-                      [_vm._v("Situatii profesionale")]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "a",
-                      { staticClass: "dropdown-item", attrs: { href: "#" } },
-                      [_vm._v("Situatii financiare")]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "a",
-                      { staticClass: "dropdown-item", attrs: { href: "#" } },
-                      [_vm._v("Situatii invatamant")]
-                    )
-                  ]
-                )
-              ]),
-              _vm._v(" "),
-              _c("li", { staticClass: "nav-item dropdown" }, [
-                _c(
-                  "a",
-                  {
-                    staticClass: "nav-link dropdown-toggle",
-                    attrs: {
-                      href: "#",
-                      id: "navbarDropdown",
-                      role: "button",
-                      "data-toggle": "dropdown",
-                      "aria-haspopup": "true",
-                      "aria-expanded": "false"
-                    }
-                  },
-                  [
-                    _vm._v(
-                      "\r\n                        Istoric\r\n                    "
-                    )
-                  ]
-                ),
-                _vm._v(" "),
-                _c(
-                  "div",
-                  {
-                    staticClass: "dropdown-menu",
-                    attrs: { "aria-labelledby": "navbarDropdown" }
-                  },
-                  [
-                    _c(
-                      "a",
-                      { staticClass: "dropdown-item", attrs: { href: "#" } },
-                      [_vm._v("Ordonatori")]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "a",
-                      { staticClass: "dropdown-item", attrs: { href: "#" } },
-                      [_vm._v("Institutii publice")]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "a",
-                      { staticClass: "dropdown-item", attrs: { href: "#" } },
-                      [_vm._v("Angajati")]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "a",
-                      { staticClass: "dropdown-item", attrs: { href: "#" } },
-                      [_vm._v("State")]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "a",
-                      { staticClass: "dropdown-item", attrs: { href: "#" } },
-                      [_vm._v("Pozitii")]
-                    )
-                  ]
-                )
-              ]),
-              _vm._v(" "),
-              _c("li", { staticClass: "nav-item dropdown" }, [
-                _c(
-                  "a",
-                  {
-                    staticClass: "nav-link dropdown-toggle",
-                    attrs: {
-                      href: "#",
-                      id: "navbarDropdown",
-                      role: "button",
-                      "data-toggle": "dropdown",
-                      "aria-haspopup": "true",
-                      "aria-expanded": "false"
-                    }
-                  },
-                  [
-                    _vm._v(
-                      "\r\n                        Documente\r\n                    "
-                    )
-                  ]
-                ),
-                _vm._v(" "),
-                _c(
-                  "div",
-                  {
-                    staticClass: "dropdown-menu",
-                    attrs: { "aria-labelledby": "navbarDropdown" }
-                  },
-                  [
-                    _c(
-                      "a",
-                      { staticClass: "dropdown-item", attrs: { href: "#" } },
-                      [_vm._v("Adeverinta angajat")]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "a",
-                      { staticClass: "dropdown-item", attrs: { href: "#" } },
-                      [_vm._v("Adeverinta salarii")]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "a",
-                      { staticClass: "dropdown-item", attrs: { href: "#" } },
-                      [_vm._v("Adeverinta vechime")]
-                    )
-                  ]
-                )
-              ]),
-              _vm._v(" "),
-              _c("li", { staticClass: "nav-item dropdown" }, [
-                _c(
-                  "a",
-                  {
-                    staticClass: "nav-link dropdown-toggle",
-                    attrs: {
-                      href: "#",
-                      id: "navbarDropdown",
-                      role: "button",
-                      "data-toggle": "dropdown",
-                      "aria-haspopup": "true",
-                      "aria-expanded": "false"
-                    }
-                  },
-                  [
-                    _vm._v(
-                      "\r\n                        Stat\r\n                    "
-                    )
-                  ]
-                ),
-                _vm._v(" "),
-                _c(
-                  "div",
-                  {
-                    staticClass: "dropdown-menu",
-                    attrs: { "aria-labelledby": "navbarDropdown" }
-                  },
-                  [
-                    _c(
-                      "a",
-                      { staticClass: "dropdown-item", attrs: { href: "#" } },
-                      [_vm._v("Vizualizare")]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "a",
-                      { staticClass: "dropdown-item", attrs: { href: "#" } },
-                      [_vm._v("Suplimentare")]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "a",
-                      { staticClass: "dropdown-item", attrs: { href: "#" } },
-                      [_vm._v("Radiere")]
-                    )
-                  ]
-                )
-              ]),
-              _vm._v(" "),
-              _c("li", { staticClass: "nav-item dropdown" }, [
-                _c(
-                  "a",
-                  {
-                    staticClass: "nav-link dropdown-toggle",
-                    attrs: {
-                      href: "#",
-                      id: "navbarDropdown",
-                      role: "button",
-                      "data-toggle": "dropdown",
-                      "aria-haspopup": "true",
-                      "aria-expanded": "false"
-                    }
-                  },
-                  [
-                    _vm._v(
-                      "\r\n                        Functii\r\n                    "
-                    )
-                  ]
-                ),
-                _vm._v(" "),
-                _c(
-                  "div",
-                  {
-                    staticClass: "dropdown-menu",
-                    attrs: { "aria-labelledby": "navbarDropdown" }
-                  },
-                  [
-                    _c(
-                      "a",
-                      { staticClass: "dropdown-item", attrs: { href: "#" } },
-                      [_vm._v("Vizualizare")]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "a",
-                      { staticClass: "dropdown-item", attrs: { href: "#" } },
-                      [_vm._v("Suplimentare")]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "a",
-                      { staticClass: "dropdown-item", attrs: { href: "#" } },
-                      [_vm._v("Radiere")]
-                    )
-                  ]
-                )
-              ]),
-              _vm._v(" "),
-              _c("li", { staticClass: "nav-item dropdown" }, [
-                _c(
-                  "a",
-                  {
-                    staticClass: "nav-link dropdown-toggle",
-                    attrs: {
-                      href: "#",
-                      id: "navbarDropdown",
-                      role: "button",
-                      "data-toggle": "dropdown",
-                      "aria-haspopup": "true",
-                      "aria-expanded": "false"
-                    }
-                  },
-                  [
-                    _vm._v(
-                      "\r\n                        Pozitii\r\n                    "
-                    )
-                  ]
-                ),
-                _vm._v(" "),
-                _c(
-                  "div",
-                  {
-                    staticClass: "dropdown-menu",
-                    attrs: { "aria-labelledby": "navbarDropdown" }
-                  },
-                  [
-                    _c(
-                      "a",
-                      { staticClass: "dropdown-item", attrs: { href: "#" } },
-                      [_vm._v("Vizualizare")]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "a",
-                      { staticClass: "dropdown-item", attrs: { href: "#" } },
-                      [_vm._v("Suplimentare")]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "a",
-                      { staticClass: "dropdown-item", attrs: { href: "#" } },
-                      [_vm._v("Radiere")]
-                    )
-                  ]
-                )
               ])
-            ])
-          ]
-        )
-      ])
-    ])
+            ]
+          )
+        ])
+      ]
+    )
   }
 ]
 render._withStripped = true

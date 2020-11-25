@@ -1,6 +1,6 @@
 <template>
   <div class="container-fluid jumbotron">
-    <div class="">
+    <div class="mt-2">
       <h1 class="display-4">SMRUSB</h1>
       <p class="lead">
         Sistemul Informatic de Management Resurse Umane in Sistemul Bugetar

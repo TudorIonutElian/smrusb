@@ -10,6 +10,7 @@
         <div class="row my-2">
             <!-- Button trigger modal -->
             <!-- Modal -->
+            <div class="container">
             <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
@@ -20,7 +21,7 @@
                             </button>
                         </div>
                         <div class="modal-body">
-                            ...
+
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-danger" data-dismiss="modal">Inchide</button>
@@ -28,6 +29,7 @@
                         </div>
                     </div>
                 </div>
+            </div>
             </div>
         </div>
         <div class="row mt-1">
@@ -93,5 +95,8 @@ export default {
 .bg-main {
     background-color: #222f3e;
     color: #fff;
+}
+.modal-body{
+    width: 300px;
 }
 </style>

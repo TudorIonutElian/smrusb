@@ -15,6 +15,7 @@ class CreateAngajati extends Migration
     {
         Schema::create('angajati', function (Blueprint $table) {
             $table->id();
+            $table->unsignedBigInteger('tip')->nullable();
             $table->string('nume_angajat', 30);
             $table->string('prenume_angajat', 70);
             $table->date('data_nasterii', 30);
@@ -25,6 +26,9 @@ class CreateAngajati extends Migration
             $table->unsignedBigInteger('institutie_curenta');
             $table->unsignedBigInteger('functie_curenta');
             $table->unsignedTinyInteger('grad_curent');
+
+
+            $table->foreign('tip')->references('id')->on('tip_angajati');
         });
     }
 
