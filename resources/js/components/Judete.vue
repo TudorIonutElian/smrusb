@@ -1,17 +1,15 @@
 <template>
 <div>
     <top-nav></top-nav>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-12 p-4 orange-label-slower">Detalii statistice despre Judetele Romaniei</div>
-        </div>
+    <div class="container-fluid" id="pageJudete">
+
         <div class="row" v-if="loading">
             <loading-animation></loading-animation>
         </div>
         <div class="row py-2" v-else>
             <div class="col-3 my-1" v-for="judet in judete" :key="judet.id">
                 <div class="card">
-                    <div class="card-title orange-label-slower text-center p-2">Judetul #{{ judet.id}}</div>
+                    <div class="card-title orange-label-slower text-center p-2" style="font-weight: bold">Judetul #{{ judet.id}}</div>
                     <div class="box-institutie">
                         <div>Denumire judet: </div>
                         <div>{{ judet.denumireJudet}}</div>
@@ -19,6 +17,10 @@
                     <div class="box-institutie">
                         <div>Denumire regiune: </div>
                         <div>{{ judet.denumireRegiune}}</div>
+                    </div>
+                    <div class="box-institutie">
+                        <div>Numar localitati: </div>
+                        <div><a :href=" `/judete/${judet.id}/localitati` " class="count">{{ judet.localitati.length}}</a></div>
                     </div>
                     <div class="box-institutie">
                         <div>Numar ordonatori: </div>
@@ -68,4 +70,18 @@ export default {
 </script>
 
 <style>
+div.card-title:hover{
+    color: #fff;
+    cursor: pointer;
+}
+a.count{
+    padding: 5px 20px;
+    background-color: #ffeaa7;
+    text-decoration: none;
+    border-radius: 5px;
+    color: #000;
+}
+#pageJudete{
+    padding-top: 6vh;
+}
 </style>

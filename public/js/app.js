@@ -2140,6 +2140,8 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 //
 //
 //
+//
+//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -2358,6 +2360,43 @@ function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try
 
 function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
 
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -7082,6 +7121,25 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Judete.vue?vue&type=style&index=0&lang=css&":
+/*!************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader??ref--6-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Judete.vue?vue&type=style&index=0&lang=css& ***!
+  \************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "\ndiv.card-title:hover{\n    color: #fff;\n    cursor: pointer;\n}\na.count{\n    padding: 5px 20px;\n    background-color: #ffeaa7;\n    text-decoration: none;\n    border-radius: 5px;\n    color: #000;\n}\n#pageJudete{\n    padding-top: 6vh;\n}\n", ""]);
+
+// exports
+
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Ordonator.vue?vue&type=style&index=0&id=2e8e1e0a&scoped=true&lang=css&":
 /*!***************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/css-loader??ref--6-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Ordonator.vue?vue&type=style&index=0&id=2e8e1e0a&scoped=true&lang=css& ***!
@@ -7113,7 +7171,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n.bg-main[data-v-3183e47e] {\r\n    background-color: #222f3e;\r\n    color: #fff;\n}\n.modal-body[data-v-3183e47e]{\r\n    width: 300px;\n}\r\n", ""]);
+exports.push([module.i, "\n.bg-main[data-v-3183e47e] {\r\n  background-color: #222f3e;\r\n  color: #fff;\n}\n.modal-body[data-v-3183e47e] {\r\n  width: 300px;\n}\r\n", ""]);
 
 // exports
 
@@ -7151,7 +7209,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n.navbar[data-v-a7036bb2] {\r\n    background-color: #3D405B;\n}\n.navbar-brand[data-v-a7036bb2] {\r\n    font-family: \"Roboto\", sans-serif;\r\n    font-weight: 900;\r\n    font-size: 18px;\r\n    color: #fff;\r\n    text-decoration: none;\n}\n.navbar-brand[data-v-a7036bb2]:hover {\r\n    text-decoration: none;\r\n    color: #48dbfb;\r\n    transition: color 0.5s;\n}\nli.nav-item a[data-v-a7036bb2] {\r\n    color: #fff;\n}\nli.nav-item[data-v-a7036bb2]:hover {\r\n    color: #000;\n}\nli.nav-item:hover>.nav-link[data-v-a7036bb2] {\r\n    background-color: #E07A5F;\r\n    color: #000;\r\n    border-radius: 3px;\r\n    text-decoration: none;\r\n    transition: background-color 0.5s;\r\n    -webkit-animation-direction: alternate;\r\n            animation-direction: alternate;\r\n    -webkit-animation-timing-function: ease-in-out;\r\n            animation-timing-function: ease-in-out;\n}\n.dropdown-menu[data-v-a7036bb2],\r\n.dropdown-item[data-v-a7036bb2] {\r\n    background-color: #615D6C;\r\n    color: #000;\n}\n.dropdown-item[data-v-a7036bb2]:hover {\r\n    background-color: #E07A5F;\r\n    color: #000;\n}\n#navbar-menu[data-v-a7036bb2] {\r\n    height: 5.5%;\n}\n.nav-sticky[data-v-a7036bb2]{\r\n    position: fixed;\r\n    top: 0;\r\n    margin-bottom: 20px;\r\n    width: 100%;\r\n    z-index: 1000;\n}\r\n", ""]);
+exports.push([module.i, "\n.navbar[data-v-a7036bb2] {\n    background-color: #3D405B;\n}\n.navbar-brand[data-v-a7036bb2] {\n    font-family: \"Roboto\", sans-serif;\n    font-weight: 900;\n    font-size: 18px;\n    color: #fff;\n    text-decoration: none;\n}\n.navbar-brand[data-v-a7036bb2]:hover {\n    text-decoration: none;\n    color: #48dbfb;\n    transition: color 0.5s;\n}\nli.nav-item a[data-v-a7036bb2] {\n    color: #fff;\n}\nli.nav-item[data-v-a7036bb2]:hover {\n    color: #000;\n}\nli.nav-item:hover>.nav-link[data-v-a7036bb2] {\n    background-color: #E07A5F;\n    color: #000;\n    border-radius: 3px;\n    text-decoration: none;\n    transition: background-color 0.5s;\n    -webkit-animation-direction: alternate;\n            animation-direction: alternate;\n    -webkit-animation-timing-function: ease-in-out;\n            animation-timing-function: ease-in-out;\n}\n.dropdown-menu[data-v-a7036bb2],\n.dropdown-item[data-v-a7036bb2] {\n    background-color: #615D6C;\n    color: #000;\n}\n.dropdown-item[data-v-a7036bb2]:hover {\n    background-color: #E07A5F;\n    color: #000;\n}\n#navbar-menu[data-v-a7036bb2] {\n    height: 5.5vh;\n}\n.nav-sticky[data-v-a7036bb2]{\n    position: fixed;\n    top: 0;\n    width: 100%;\n    z-index: 1000;\n}\n", ""]);
 
 // exports
 
@@ -39076,6 +39134,36 @@ try {
 
 /***/ }),
 
+/***/ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Judete.vue?vue&type=style&index=0&lang=css&":
+/*!****************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/style-loader!./node_modules/css-loader??ref--6-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Judete.vue?vue&type=style&index=0&lang=css& ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../../node_modules/css-loader??ref--6-1!../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../node_modules/postcss-loader/src??ref--6-2!../../../node_modules/vue-loader/lib??vue-loader-options!./Judete.vue?vue&type=style&index=0&lang=css& */ "./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Judete.vue?vue&type=style&index=0&lang=css&");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
+
+/***/ }),
+
 /***/ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Ordonator.vue?vue&type=style&index=0&id=2e8e1e0a&scoped=true&lang=css&":
 /*!*******************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/style-loader!./node_modules/css-loader??ref--6-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Ordonator.vue?vue&type=style&index=0&id=2e8e1e0a&scoped=true&lang=css& ***!
@@ -40042,68 +40130,82 @@ var render = function() {
     [
       _c("top-nav"),
       _vm._v(" "),
-      _c("div", { staticClass: "container-fluid" }, [
-        _vm._m(0),
-        _vm._v(" "),
-        _vm.loading
-          ? _c("div", { staticClass: "row" }, [_c("loading-animation")], 1)
-          : _c(
-              "div",
-              { staticClass: "row py-2" },
-              _vm._l(_vm.judete, function(judet) {
-                return _c("div", { key: judet.id, staticClass: "col-3 my-1" }, [
-                  _c("div", { staticClass: "card" }, [
-                    _c(
-                      "div",
-                      {
-                        staticClass:
-                          "card-title orange-label-slower text-center p-2"
-                      },
-                      [_vm._v("Judetul #" + _vm._s(judet.id))]
-                    ),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "box-institutie" }, [
-                      _c("div", [_vm._v("Denumire judet: ")]),
-                      _vm._v(" "),
-                      _c("div", [_vm._v(_vm._s(judet.denumireJudet))])
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "box-institutie" }, [
-                      _c("div", [_vm._v("Denumire regiune: ")]),
-                      _vm._v(" "),
-                      _c("div", [_vm._v(_vm._s(judet.denumireRegiune))])
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "box-institutie" }, [
-                      _c("div", [_vm._v("Numar ordonatori: ")]),
-                      _vm._v(" "),
-                      _c("div", [_vm._v(_vm._s(judet.numarOrdonatori))])
-                    ]),
-                    _vm._v(" "),
-                    _vm._m(1, true),
-                    _vm._v(" "),
-                    _vm._m(2, true)
-                  ])
-                ])
-              }),
-              0
-            )
-      ])
+      _c(
+        "div",
+        { staticClass: "container-fluid", attrs: { id: "pageJudete" } },
+        [
+          _vm.loading
+            ? _c("div", { staticClass: "row" }, [_c("loading-animation")], 1)
+            : _c(
+                "div",
+                { staticClass: "row py-2" },
+                _vm._l(_vm.judete, function(judet) {
+                  return _c(
+                    "div",
+                    { key: judet.id, staticClass: "col-3 my-1" },
+                    [
+                      _c("div", { staticClass: "card" }, [
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "card-title orange-label-slower text-center p-2",
+                            staticStyle: { "font-weight": "bold" }
+                          },
+                          [_vm._v("Judetul #" + _vm._s(judet.id))]
+                        ),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "box-institutie" }, [
+                          _c("div", [_vm._v("Denumire judet: ")]),
+                          _vm._v(" "),
+                          _c("div", [_vm._v(_vm._s(judet.denumireJudet))])
+                        ]),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "box-institutie" }, [
+                          _c("div", [_vm._v("Denumire regiune: ")]),
+                          _vm._v(" "),
+                          _c("div", [_vm._v(_vm._s(judet.denumireRegiune))])
+                        ]),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "box-institutie" }, [
+                          _c("div", [_vm._v("Numar localitati: ")]),
+                          _vm._v(" "),
+                          _c("div", [
+                            _c(
+                              "a",
+                              {
+                                staticClass: "count",
+                                attrs: {
+                                  href: "/judete/" + judet.id + "/localitati"
+                                }
+                              },
+                              [_vm._v(_vm._s(judet.localitati.length))]
+                            )
+                          ])
+                        ]),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "box-institutie" }, [
+                          _c("div", [_vm._v("Numar ordonatori: ")]),
+                          _vm._v(" "),
+                          _c("div", [_vm._v(_vm._s(judet.numarOrdonatori))])
+                        ]),
+                        _vm._v(" "),
+                        _vm._m(0, true),
+                        _vm._v(" "),
+                        _vm._m(1, true)
+                      ])
+                    ]
+                  )
+                }),
+                0
+              )
+        ]
+      )
     ],
     1
   )
 }
 var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "row" }, [
-      _c("div", { staticClass: "col-12 p-4 orange-label-slower" }, [
-        _vm._v("Detalii statistice despre Judetele Romaniei")
-      ])
-    ])
-  },
   function() {
     var _vm = this
     var _h = _vm.$createElement
@@ -40273,7 +40375,7 @@ var render = function() {
                             "h5",
                             {
                               staticClass:
-                                "card-title text-center p-2 orange-label text-white"
+                                "card-title text-center p-3 orange-label text-white"
                             },
                             [_vm._v(_vm._s(institutie.denumire))]
                           ),
@@ -40460,20 +40562,26 @@ var render = function() {
                       staticClass:
                         "card-title text-center p-2 orange-label text-white"
                     },
-                    [_vm._v(_vm._s(ordonator.denumire))]
+                    [
+                      _vm._v(
+                        "\n              " +
+                          _vm._s(ordonator.denumire) +
+                          "\n            "
+                      )
+                    ]
                   ),
                   _vm._v(" "),
                   _c("div", { staticClass: "box-institutie" }, [
                     _c("div", [_vm._v("Data Infiintare")]),
                     _vm._v(" "),
-                    _c("div", [_vm._v(" " + _vm._s(ordonator.dataInfiintare))])
+                    _c("div", [_vm._v(_vm._s(ordonator.dataInfiintare))])
                   ]),
                   _vm._v(" "),
                   _c("div", { staticClass: "box-institutie" }, [
                     _c("div", [_vm._v("Tip Ordonator")]),
                     _vm._v(" "),
                     _c("div", [
-                      _vm._v(" " + _vm._s(_vm.outputOrdonator(ordonator.tip)))
+                      _vm._v(_vm._s(_vm.outputOrdonator(ordonator.tip)))
                     ])
                   ]),
                   _vm._v(" "),
@@ -40510,7 +40618,7 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "row" }, [
       _c("div", { staticClass: "col-12 bg-secondary text-white p-2" }, [
-        _vm._v("\r\n                Ordonatori de Credite\r\n            ")
+        _vm._v("\n        Ordonatori de Credite\n      ")
       ])
     ])
   },
@@ -40545,7 +40653,11 @@ var staticRenderFns = [
                         staticClass: "modal-title",
                         attrs: { id: "exampleModalLabel" }
                       },
-                      [_vm._v("Adaugare Ordonator de credite")]
+                      [
+                        _vm._v(
+                          "\n                  Adaugare Ordonator de credite\n                "
+                        )
+                      ]
                     ),
                     _vm._v(" "),
                     _c(
@@ -40566,7 +40678,13 @@ var staticRenderFns = [
                     )
                   ]),
                   _vm._v(" "),
-                  _c("div", { staticClass: "modal-body" }),
+                  _c("div", { staticClass: "modal-body" }, [
+                    _c("div", { staticClass: "container-fluid" }, [
+                      _vm._v(
+                        "\n                      adawd\n                  "
+                      )
+                    ])
+                  ]),
                   _vm._v(" "),
                   _c("div", { staticClass: "modal-footer" }, [
                     _c(
@@ -40575,7 +40693,7 @@ var staticRenderFns = [
                         staticClass: "btn btn-danger",
                         attrs: { type: "button", "data-dismiss": "modal" }
                       },
-                      [_vm._v("Inchide")]
+                      [_vm._v("\n                  Inchide\n                ")]
                     ),
                     _vm._v(" "),
                     _c(
@@ -40584,7 +40702,11 @@ var staticRenderFns = [
                         staticClass: "btn btn-success",
                         attrs: { type: "button" }
                       },
-                      [_vm._v("Salveaza Ordonator")]
+                      [
+                        _vm._v(
+                          "\n                  Salveaza Ordonator\n                "
+                        )
+                      ]
                     )
                   ])
                 ])
@@ -40765,9 +40887,11 @@ var staticRenderFns = [
                 ]),
                 _vm._v(" "),
                 _c("li", { staticClass: "nav-item" }, [
-                  _c("a", { staticClass: "nav-link", attrs: { href: "#" } }, [
-                    _vm._v("Regiuni")
-                  ])
+                  _c(
+                    "a",
+                    { staticClass: "nav-link", attrs: { href: "/regiuni" } },
+                    [_vm._v("Regiuni")]
+                  )
                 ]),
                 _vm._v(" "),
                 _c("li", { staticClass: "nav-item" }, [
@@ -40785,7 +40909,6 @@ var staticRenderFns = [
                       staticClass: "nav-link dropdown-toggle",
                       attrs: {
                         href: "#",
-                        id: "navbarDropdown",
                         role: "button",
                         "data-toggle": "dropdown",
                         "aria-haspopup": "true",
@@ -40794,7 +40917,7 @@ var staticRenderFns = [
                     },
                     [
                       _vm._v(
-                        "\r\n                        Familii ocupationale\r\n                    "
+                        "\n                        Familii ocupationale\n                    "
                       )
                     ]
                   ),
@@ -40865,7 +40988,7 @@ var staticRenderFns = [
                     },
                     [
                       _vm._v(
-                        "\r\n                        Ordonatori\r\n                    "
+                        "\n                        Ordonatori\n                    "
                       )
                     ]
                   ),
@@ -40915,7 +41038,6 @@ var staticRenderFns = [
                       staticClass: "nav-link dropdown-toggle",
                       attrs: {
                         href: "#",
-                        id: "navbarDropdown",
                         role: "button",
                         "data-toggle": "dropdown",
                         "aria-haspopup": "true",
@@ -40924,7 +41046,7 @@ var staticRenderFns = [
                     },
                     [
                       _vm._v(
-                        "\r\n                        Institutii Publice\r\n                    "
+                        "\n                        Institutii Publice\n                    "
                       )
                     ]
                   ),
@@ -40964,7 +41086,6 @@ var staticRenderFns = [
                       staticClass: "nav-link dropdown-toggle",
                       attrs: {
                         href: "#",
-                        id: "navbarDropdown",
                         role: "button",
                         "data-toggle": "dropdown",
                         "aria-haspopup": "true",
@@ -40973,7 +41094,7 @@ var staticRenderFns = [
                     },
                     [
                       _vm._v(
-                        "\r\n                        Angajati\r\n                    "
+                        "\n                        Angajati\n                    "
                       )
                     ]
                   ),
@@ -41013,7 +41134,6 @@ var staticRenderFns = [
                       staticClass: "nav-link dropdown-toggle",
                       attrs: {
                         href: "#",
-                        id: "navbarDropdown",
                         role: "button",
                         "data-toggle": "dropdown",
                         "aria-haspopup": "true",
@@ -41022,7 +41142,7 @@ var staticRenderFns = [
                     },
                     [
                       _vm._v(
-                        "\r\n                        Situatii\r\n                    "
+                        "\n                        Situatii\n                    "
                       )
                     ]
                   ),
@@ -41062,7 +41182,6 @@ var staticRenderFns = [
                       staticClass: "nav-link dropdown-toggle",
                       attrs: {
                         href: "#",
-                        id: "navbarDropdown",
                         role: "button",
                         "data-toggle": "dropdown",
                         "aria-haspopup": "true",
@@ -41071,7 +41190,7 @@ var staticRenderFns = [
                     },
                     [
                       _vm._v(
-                        "\r\n                        Istoric\r\n                    "
+                        "\n                        Istoric\n                    "
                       )
                     ]
                   ),
@@ -41123,7 +41242,6 @@ var staticRenderFns = [
                       staticClass: "nav-link dropdown-toggle",
                       attrs: {
                         href: "#",
-                        id: "navbarDropdown",
                         role: "button",
                         "data-toggle": "dropdown",
                         "aria-haspopup": "true",
@@ -41132,7 +41250,7 @@ var staticRenderFns = [
                     },
                     [
                       _vm._v(
-                        "\r\n                        Documente\r\n                    "
+                        "\n                        Documente\n                    "
                       )
                     ]
                   ),
@@ -41172,7 +41290,6 @@ var staticRenderFns = [
                       staticClass: "nav-link dropdown-toggle",
                       attrs: {
                         href: "#",
-                        id: "navbarDropdown",
                         role: "button",
                         "data-toggle": "dropdown",
                         "aria-haspopup": "true",
@@ -41181,7 +41298,7 @@ var staticRenderFns = [
                     },
                     [
                       _vm._v(
-                        "\r\n                        Stat\r\n                    "
+                        "\n                        Stat\n                    "
                       )
                     ]
                   ),
@@ -41221,7 +41338,6 @@ var staticRenderFns = [
                       staticClass: "nav-link dropdown-toggle",
                       attrs: {
                         href: "#",
-                        id: "navbarDropdown",
                         role: "button",
                         "data-toggle": "dropdown",
                         "aria-haspopup": "true",
@@ -41230,7 +41346,7 @@ var staticRenderFns = [
                     },
                     [
                       _vm._v(
-                        "\r\n                        Functii\r\n                    "
+                        "\n                        Functii\n                    "
                       )
                     ]
                   ),
@@ -41270,7 +41386,6 @@ var staticRenderFns = [
                       staticClass: "nav-link dropdown-toggle",
                       attrs: {
                         href: "#",
-                        id: "navbarDropdown",
                         role: "button",
                         "data-toggle": "dropdown",
                         "aria-haspopup": "true",
@@ -41279,7 +41394,7 @@ var staticRenderFns = [
                     },
                     [
                       _vm._v(
-                        "\r\n                        Pozitii\r\n                    "
+                        "\n                        Pozitii\n                    "
                       )
                     ]
                   ),
@@ -56823,7 +56938,9 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Judete_vue_vue_type_template_id_bab8d3b0___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Judete.vue?vue&type=template&id=bab8d3b0& */ "./resources/js/components/Judete.vue?vue&type=template&id=bab8d3b0&");
 /* harmony import */ var _Judete_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Judete.vue?vue&type=script&lang=js& */ "./resources/js/components/Judete.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+/* empty/unused harmony star reexport *//* harmony import */ var _Judete_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Judete.vue?vue&type=style&index=0&lang=css& */ "./resources/js/components/Judete.vue?vue&type=style&index=0&lang=css&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
 
 
 
@@ -56831,7 +56948,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /* normalize component */
 
-var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__["default"])(
   _Judete_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
   _Judete_vue_vue_type_template_id_bab8d3b0___WEBPACK_IMPORTED_MODULE_0__["render"],
   _Judete_vue_vue_type_template_id_bab8d3b0___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
@@ -56860,6 +56977,22 @@ component.options.__file = "resources/js/components/Judete.vue"
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Judete_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./Judete.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Judete.vue?vue&type=script&lang=js&");
 /* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Judete_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/components/Judete.vue?vue&type=style&index=0&lang=css&":
+/*!*****************************************************************************!*\
+  !*** ./resources/js/components/Judete.vue?vue&type=style&index=0&lang=css& ***!
+  \*****************************************************************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Judete_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/style-loader!../../../node_modules/css-loader??ref--6-1!../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../node_modules/postcss-loader/src??ref--6-2!../../../node_modules/vue-loader/lib??vue-loader-options!./Judete.vue?vue&type=style&index=0&lang=css& */ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Judete.vue?vue&type=style&index=0&lang=css&");
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Judete_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Judete_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Judete_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Judete_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Judete_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0___default.a); 
 
 /***/ }),
 
@@ -57316,8 +57449,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! E:\AS-ASE\working\smrusb\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! E:\AS-ASE\working\smrusb\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! C:\Users\TudorIonutElian\Downloads\Academia de Studii Economice\Licenta\aplicatie\smrusb\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\Users\TudorIonutElian\Downloads\Academia de Studii Economice\Licenta\aplicatie\smrusb\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })
