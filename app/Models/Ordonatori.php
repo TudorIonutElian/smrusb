@@ -11,6 +11,9 @@ class Ordonatori extends Model
 
     protected $table="ordonatori";
 
+    // Anulare coloane created_at si updated_at
+    public $timestamps = false;
+
 
     /* ------------------ AFISARE LOCALITATI------------------*/
     public function getJudet(){

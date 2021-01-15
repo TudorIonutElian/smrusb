@@ -1,20 +1,23 @@
 <?php
 
-// Import Collections
+use App\Http\Controllers\OrdonatoriController;
 
-use App\Http\Resources\InstitutiiCollection;
+// Import Collections
 use App\Http\Resources\JudeteCollection;
 use App\Http\Resources\OrdonatoriCollection;
-use App\Models\Institutii;
+use App\Http\Resources\FamiliiOcupationaleCollection;
+use App\Http\Resources\OrdonatoriDeCrediteTipCollection;
+
 
 // Import Models
 use App\Models\Judete;
 use App\Models\Ordonatori;
+use App\Models\FamiliiOcupationale;
+use App\Models\TipOrdonatori;
 
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
-
 use Illuminate\Support\Facades\DB;
 use NunoMaduro\Collision\Adapters\Laravel\Inspector;
 
@@ -53,12 +56,12 @@ Route::get('/ordonatori/{id}', function ($id) {
         ->join('judete', 'institutii.judet', '=', 'judete.id')
         ->join('localitati', 'institutii.localitate', '=', 'localitati.id')
         ->select(
-            'institutii.id', 
-            'institutii.denumire', 
-            'tip_institutii.denumire as TipInstitutie', 
+            'institutii.id',
+            'institutii.denumire',
+            'tip_institutii.denumire as TipInstitutie',
             'ordonatori.denumire as DenumireOrdonator',
             'judete.denumire as Judet',
-            'localitati.denumire as Localitate', 
+            'localitati.denumire as Localitate',
             'institutii.stare')
         ->get();
 
@@ -68,8 +71,26 @@ Route::get('/ordonatori/{id}', function ($id) {
     ];
 });
 
-//API_JUDETE
-
+//  API_JUDETE
 Route::get('/judete', function () {
     return JudeteCollection::collection(Judete::all());
 });
+
+
+
+
+
+// Preluare date Familii Ocupationale
+Route::get('/familiiocupationale/all', function(){
+    return FamiliiOcupationaleCollection::collection(FamiliiOcupationale::all());
+});
+
+// Adaugare ordonator de credite
+Route::post('/ordonatori/creare', [OrdonatoriController::class, 'store']);
+
+//  API_TIP_ORDONATORI
+Route::get('/tipordonatoridecredite', function () {
+    return OrdonatoriDeCrediteTipCollection::collection(TipOrdonatori::all());
+});
+
+

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Ordonatori;
 use Illuminate\Http\Request;
 
 class OrdonatoriController extends Controller
@@ -34,7 +35,19 @@ class OrdonatoriController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $ordonator = new Ordonatori();
+
+        $ordonator->familie                         = $request->familie;
+        $ordonator->denumire                        = $request->denumire;
+        $ordonator->tip_ordonator                   = $request->tip_ordonator;
+        $ordonator->judet                           = $request->judet;
+        $ordonator->localitate                      = $request->localitate;
+        $ordonator->data_infiintare                 = $request->data_infiintare;
+        $ordonator->stare                           = $request->stare;
+
+        if($ordonator->save()){
+            return response("Ordonatorul a fost adaugat cu succes", 200)->header('Content-Type', 'application/json');
+        }
     }
 
     /**

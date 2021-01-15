@@ -12,6 +12,10 @@ import Vue from 'vue'
 import VueRouter from 'vue-router';
 Vue.use(VueRouter)
 
+import moment from 'moment'
+
+Vue.prototype.moment = moment
+
 
 import Home from './components/Home.vue';
 import Despre from './components/Despre.vue';
