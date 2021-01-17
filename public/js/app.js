@@ -2040,6 +2040,40 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/FamiliiOcupationale/FamiliiOcupationaleAll.vue?vue&type=script&lang=js&":
+/*!*****************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/FamiliiOcupationale/FamiliiOcupationaleAll.vue?vue&type=script&lang=js& ***!
+  \*****************************************************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _menus_TopNav__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../menus/TopNav */ "./resources/js/menus/TopNav.vue");
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  data: function data() {
+    return {};
+  },
+  components: {
+    TopNav: _menus_TopNav__WEBPACK_IMPORTED_MODULE_0__["default"]
+  }
+});
+
+/***/ }),
+
 /***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Home.vue?vue&type=script&lang=js&":
 /*!***************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Home.vue?vue&type=script&lang=js& ***!
@@ -2499,7 +2533,6 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 //
 //
 //
-//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -2695,6 +2728,15 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
       } else {
         return "Ordonator tertiar";
       }
+    },
+    outPutClass: function outPutClass(tipOrdonator) {
+      if (tipOrdonator == 1) {
+        return "ordonatorPrincipal";
+      } else if (tipOrdonator == 2) {
+        return "ordonatorSecundar";
+      } else {
+        return "ordonatorTertiar";
+      }
     }
   }
 });
@@ -2762,6 +2804,20 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -7316,6 +7372,25 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/FamiliiOcupationale/FamiliiOcupationaleAll.vue?vue&type=style&index=0&id=73c38129&scoped=true&lang=css&":
+/*!************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader??ref--6-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/FamiliiOcupationale/FamiliiOcupationaleAll.vue?vue&type=style&index=0&id=73c38129&scoped=true&lang=css& ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "\n.startFamilii[data-v-73c38129]{\n    margin-top: 6vh;\n}\n", ""]);
+
+// exports
+
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Judete.vue?vue&type=style&index=0&lang=css&":
 /*!************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/css-loader??ref--6-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Judete.vue?vue&type=style&index=0&lang=css& ***!
@@ -7366,7 +7441,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n.bg-main[data-v-3183e47e] {\n  background-color: #222f3e;\n  color: #fff;\n}\n.modal-body[data-v-3183e47e] {\n  width: 500px;\n    height: 80vh;\n}\n.noDisplayAlert[data-v-3183e47e]{\n    display: none;\n}\n\n", ""]);
+exports.push([module.i, "\n.bg-main[data-v-3183e47e] {\n  background-color: #222f3e;\n  color: #fff;\n}\n.modal-body[data-v-3183e47e] {\n  width: 500px;\n    height: 80vh;\n}\n.noDisplayAlert[data-v-3183e47e]{\n    display: none;\n}\n.ordonatorPrincipal[data-v-3183e47e]{\n    padding: 2px;\n    background-color: #55efc4;\n    text-align: center;\n}\n.ordonatorSecundar[data-v-3183e47e]{\n    padding: 2px;\n    background-color: #74b9ff;\n    text-align: center;\n}\n.ordonatorTertiar[data-v-3183e47e]{\n    padding: 2px;\n    background-color: #fab1a0;\n    text-align: center;\n}\n\n", ""]);
 
 // exports
 
@@ -60900,6 +60975,36 @@ try {
 
 /***/ }),
 
+/***/ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/FamiliiOcupationale/FamiliiOcupationaleAll.vue?vue&type=style&index=0&id=73c38129&scoped=true&lang=css&":
+/*!****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/style-loader!./node_modules/css-loader??ref--6-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/FamiliiOcupationale/FamiliiOcupationaleAll.vue?vue&type=style&index=0&id=73c38129&scoped=true&lang=css& ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../../../node_modules/css-loader??ref--6-1!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/postcss-loader/src??ref--6-2!../../../../node_modules/vue-loader/lib??vue-loader-options!./FamiliiOcupationaleAll.vue?vue&type=style&index=0&id=73c38129&scoped=true&lang=css& */ "./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/FamiliiOcupationale/FamiliiOcupationaleAll.vue?vue&type=style&index=0&id=73c38129&scoped=true&lang=css&");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
+
+/***/ }),
+
 /***/ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Judete.vue?vue&type=style&index=0&lang=css&":
 /*!****************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/style-loader!./node_modules/css-loader??ref--6-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Judete.vue?vue&type=style&index=0&lang=css& ***!
@@ -61843,6 +61948,43 @@ render._withStripped = true
 
 /***/ }),
 
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/FamiliiOcupationale/FamiliiOcupationaleAll.vue?vue&type=template&id=73c38129&scoped=true&":
+/*!*********************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/FamiliiOcupationale/FamiliiOcupationaleAll.vue?vue&type=template&id=73c38129&scoped=true& ***!
+  \*********************************************************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", [_c("top-nav"), _vm._v(" "), _vm._m(0)], 1)
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "container-fluid startFamilii" }, [
+      _c("div", { staticClass: "row" }, [
+        _c("div", { staticClass: "col-12 bg-success p-3" }, [
+          _vm._v("Dezvoltare Familii Ocupationale")
+        ])
+      ])
+    ])
+  }
+]
+render._withStripped = true
+
+
+
+/***/ }),
+
 /***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Home.vue?vue&type=template&id=f2b6376c&":
 /*!*******************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Home.vue?vue&type=template&id=f2b6376c& ***!
@@ -62312,10 +62454,6 @@ var render = function() {
       _vm._v(" "),
       _c("div", { staticClass: "container-fluid mt-5" }, [
         _c("div", { staticClass: "row" }, [
-          _c("div", { staticClass: "col-12 bg-secondary text-white p-2" }, [
-            _vm._v("\n        Ordonatori de Credite\n      ")
-          ]),
-          _vm._v(" "),
           this.messages.showAdaugatSucces
             ? _c("div", { staticClass: "col-12 alert alert-success" }, [
                 _c("strong", [_vm._v("Succes!")]),
@@ -62792,9 +62930,9 @@ var render = function() {
                     },
                     [
                       _vm._v(
-                        "\n              " +
+                        "\n                        " +
                           _vm._s(ordonator.denumire) +
-                          "\n            "
+                          "\n                    "
                       )
                     ]
                   ),
@@ -63574,6 +63712,78 @@ var staticRenderFns = [
                         "a",
                         { staticClass: "dropdown-item", attrs: { href: "#" } },
                         [_vm._v("Radiere")]
+                      )
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("li", { staticClass: "nav-item dropdown" }, [
+                  _c(
+                    "a",
+                    {
+                      staticClass: "nav-link dropdown-toggle",
+                      attrs: {
+                        href: "#",
+                        role: "button",
+                        "data-toggle": "dropdown",
+                        "aria-haspopup": "true",
+                        "aria-expanded": "false"
+                      }
+                    },
+                    [
+                      _vm._v(
+                        "\n                        Nomenclator\n                    "
+                      )
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass: "dropdown-menu",
+                      attrs: { "aria-labelledby": "navbarDropdown" }
+                    },
+                    [
+                      _c(
+                        "a",
+                        { staticClass: "dropdown-item", attrs: { href: "#" } },
+                        [_vm._v("Regiuni")]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "a",
+                        { staticClass: "dropdown-item", attrs: { href: "#" } },
+                        [_vm._v("Judete")]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "a",
+                        { staticClass: "dropdown-item", attrs: { href: "#" } },
+                        [_vm._v("Familii Ocupationale")]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "a",
+                        { staticClass: "dropdown-item", attrs: { href: "#" } },
+                        [_vm._v("Ordonatori de credite")]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "a",
+                        { staticClass: "dropdown-item", attrs: { href: "#" } },
+                        [_vm._v("Institutii Publice")]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "a",
+                        { staticClass: "dropdown-item", attrs: { href: "#" } },
+                        [_vm._v("Angajati")]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "a",
+                        { staticClass: "dropdown-item", attrs: { href: "#" } },
+                        [_vm._v("Functii")]
                       )
                     ]
                   )
@@ -78845,6 +79055,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_Judete_vue__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/Judete.vue */ "./resources/js/components/Judete.vue");
 /* harmony import */ var _components_Ordonatori_vue__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/Ordonatori.vue */ "./resources/js/components/Ordonatori.vue");
 /* harmony import */ var _components_Ordonator_vue__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/Ordonator.vue */ "./resources/js/components/Ordonator.vue");
+/* harmony import */ var _components_FamiliiOcupationale_FamiliiOcupationaleAll_vue__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./components/FamiliiOcupationale/FamiliiOcupationaleAll.vue */ "./resources/js/components/FamiliiOcupationale/FamiliiOcupationaleAll.vue");
 /**
  * First we will load all of this project's JavaScript dependencies which
  * includes Vue and other libraries. It is a great starting point when
@@ -78858,6 +79069,7 @@ window.Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.
 vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]);
 
 vue__WEBPACK_IMPORTED_MODULE_0___default.a.prototype.moment = moment__WEBPACK_IMPORTED_MODULE_2___default.a;
+
 
 
 
@@ -78885,6 +79097,10 @@ var router = new vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]({
   {
     path: '/ordonator/:id',
     component: _components_Ordonator_vue__WEBPACK_IMPORTED_MODULE_7__["default"]
+  }, // Route Familii Ocupationale
+  {
+    path: '/familiiocupationale',
+    component: _components_FamiliiOcupationale_FamiliiOcupationaleAll_vue__WEBPACK_IMPORTED_MODULE_8__["default"]
   }]
 });
 /**
@@ -79009,6 +79225,93 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Despre_vue_vue_type_template_id_055f0a08___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Despre_vue_vue_type_template_id_055f0a08___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./resources/js/components/FamiliiOcupationale/FamiliiOcupationaleAll.vue":
+/*!********************************************************************************!*\
+  !*** ./resources/js/components/FamiliiOcupationale/FamiliiOcupationaleAll.vue ***!
+  \********************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _FamiliiOcupationaleAll_vue_vue_type_template_id_73c38129_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./FamiliiOcupationaleAll.vue?vue&type=template&id=73c38129&scoped=true& */ "./resources/js/components/FamiliiOcupationale/FamiliiOcupationaleAll.vue?vue&type=template&id=73c38129&scoped=true&");
+/* harmony import */ var _FamiliiOcupationaleAll_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./FamiliiOcupationaleAll.vue?vue&type=script&lang=js& */ "./resources/js/components/FamiliiOcupationale/FamiliiOcupationaleAll.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _FamiliiOcupationaleAll_vue_vue_type_style_index_0_id_73c38129_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./FamiliiOcupationaleAll.vue?vue&type=style&index=0&id=73c38129&scoped=true&lang=css& */ "./resources/js/components/FamiliiOcupationale/FamiliiOcupationaleAll.vue?vue&type=style&index=0&id=73c38129&scoped=true&lang=css&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__["default"])(
+  _FamiliiOcupationaleAll_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _FamiliiOcupationaleAll_vue_vue_type_template_id_73c38129_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _FamiliiOcupationaleAll_vue_vue_type_template_id_73c38129_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  "73c38129",
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/FamiliiOcupationale/FamiliiOcupationaleAll.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/FamiliiOcupationale/FamiliiOcupationaleAll.vue?vue&type=script&lang=js&":
+/*!*********************************************************************************************************!*\
+  !*** ./resources/js/components/FamiliiOcupationale/FamiliiOcupationaleAll.vue?vue&type=script&lang=js& ***!
+  \*********************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_FamiliiOcupationaleAll_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib??ref--4-0!../../../../node_modules/vue-loader/lib??vue-loader-options!./FamiliiOcupationaleAll.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/FamiliiOcupationale/FamiliiOcupationaleAll.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_FamiliiOcupationaleAll_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/components/FamiliiOcupationale/FamiliiOcupationaleAll.vue?vue&type=style&index=0&id=73c38129&scoped=true&lang=css&":
+/*!*****************************************************************************************************************************************!*\
+  !*** ./resources/js/components/FamiliiOcupationale/FamiliiOcupationaleAll.vue?vue&type=style&index=0&id=73c38129&scoped=true&lang=css& ***!
+  \*****************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_FamiliiOcupationaleAll_vue_vue_type_style_index_0_id_73c38129_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/style-loader!../../../../node_modules/css-loader??ref--6-1!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/postcss-loader/src??ref--6-2!../../../../node_modules/vue-loader/lib??vue-loader-options!./FamiliiOcupationaleAll.vue?vue&type=style&index=0&id=73c38129&scoped=true&lang=css& */ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/FamiliiOcupationale/FamiliiOcupationaleAll.vue?vue&type=style&index=0&id=73c38129&scoped=true&lang=css&");
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_FamiliiOcupationaleAll_vue_vue_type_style_index_0_id_73c38129_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_FamiliiOcupationaleAll_vue_vue_type_style_index_0_id_73c38129_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_FamiliiOcupationaleAll_vue_vue_type_style_index_0_id_73c38129_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_FamiliiOcupationaleAll_vue_vue_type_style_index_0_id_73c38129_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_FamiliiOcupationaleAll_vue_vue_type_style_index_0_id_73c38129_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0___default.a); 
+
+/***/ }),
+
+/***/ "./resources/js/components/FamiliiOcupationale/FamiliiOcupationaleAll.vue?vue&type=template&id=73c38129&scoped=true&":
+/*!***************************************************************************************************************************!*\
+  !*** ./resources/js/components/FamiliiOcupationale/FamiliiOcupationaleAll.vue?vue&type=template&id=73c38129&scoped=true& ***!
+  \***************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_FamiliiOcupationaleAll_vue_vue_type_template_id_73c38129_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib??vue-loader-options!./FamiliiOcupationaleAll.vue?vue&type=template&id=73c38129&scoped=true& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/FamiliiOcupationale/FamiliiOcupationaleAll.vue?vue&type=template&id=73c38129&scoped=true&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_FamiliiOcupationaleAll_vue_vue_type_template_id_73c38129_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_FamiliiOcupationaleAll_vue_vue_type_template_id_73c38129_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 

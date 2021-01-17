@@ -3,9 +3,6 @@
     <top-nav></top-nav>
     <div class="container-fluid mt-5">
       <div class="row">
-        <div class="col-12 bg-secondary text-white p-2">
-          Ordonatori de Credite
-        </div>
           <!-- Afisare mesaj de aduagare Ordonator de credite -->
           <div class="col-12 alert alert-success" v-if="this.messages.showAdaugatSucces">
               <strong>Succes!</strong> Ordonatorul a fost adaugat cu succes!.
@@ -100,38 +97,40 @@
         </div>
       </div>
       <div class="row mt-2">
-        <div
-          class="col-3 my-2"
-          v-for="ordonator in ordonatori"
-          :key="ordonator.id"
-        >
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title text-center p-2 orange-label text-white">
-                {{ ordonator.denumire }}
-              </h5>
-              <div class="box-institutie">
-                <div>Data Infiintare</div>
-                <div>{{ ordonator.dataInfiintare }}</div>
+          <div
+              class="col-3 my-2"
+              v-for="ordonator in ordonatori"
+              :key="ordonator.id"
+          >
+              <div class="card">
+                  <div class="card-body">
+                      <h5 class="card-title text-center p-2 orange-label text-white">
+                          {{ ordonator.denumire }}
+                      </h5>
+                      <div class="box-institutie">
+                          <div>Data Infiintare</div>
+                          <div>{{ ordonator.dataInfiintare }}</div>
+                      </div>
+                      <div class="box-institutie">
+                          <div>Tip Ordonator</div>
+                          <div>{{ outputOrdonator(ordonator.tip) }}</div>
+                      </div>
+                      <div class="box-institutie">
+                          <div>Institutii</div>
+                          <div>
+                              <a
+                                  v-bind:href="'/ordonator/' + ordonator.id"
+                                  class="btn orange-label-slower btn-sm btn-block"
+                              >Institutii</a
+                              >
+                          </div>
+                      </div>
+                  </div>
               </div>
-              <div class="box-institutie">
-                <div>Tip Ordonator</div>
-                <div>{{ outputOrdonator(ordonator.tip) }}</div>
-              </div>
-              <div class="box-institutie">
-                <div>Institutii</div>
-                <div>
-                  <a
-                    v-bind:href="'/ordonator/' + ordonator.id"
-                    class="btn orange-label-slower btn-sm btn-block"
-                    >Institutii</a
-                  >
-                </div>
-              </div>
-            </div>
           </div>
-        </div>
       </div>
+      </div>
+    </div>
     </div>
   </div>
 </template>
@@ -223,6 +222,15 @@ export default {
         return "Ordonator tertiar";
       }
     },
+      outPutClass(tipOrdonator){
+          if (tipOrdonator == 1) {
+              return "ordonatorPrincipal";
+          } else if (tipOrdonator == 2) {
+              return "ordonatorSecundar";
+          } else {
+              return "ordonatorTertiar";
+          }
+      }
   },
 };
 </script>
@@ -238,6 +246,21 @@ export default {
 }
 .noDisplayAlert{
     display: none;
+}
+.ordonatorPrincipal{
+    padding: 2px;
+    background-color: #55efc4;
+    text-align: center;
+}
+.ordonatorSecundar{
+    padding: 2px;
+    background-color: #74b9ff;
+    text-align: center;
+}
+.ordonatorTertiar{
+    padding: 2px;
+    background-color: #fab1a0;
+    text-align: center;
 }
 
 </style>

@@ -22,6 +22,7 @@ import Despre from './components/Despre.vue';
 import Judete from './components/Judete.vue';
 import Ordonatori from './components/Ordonatori.vue';
 import Ordonator from './components/Ordonator.vue';
+import FamiliiOcupationale from './components/FamiliiOcupationale/FamiliiOcupationaleAll.vue';
 
 const router = new VueRouter({
     mode: 'history',
@@ -40,6 +41,9 @@ const router = new VueRouter({
 
       // Route Ordonator de Credite
       { path: '/ordonator/:id', component: Ordonator },
+
+        // Route Familii Ocupationale
+        { path: '/familiiocupationale', component: FamiliiOcupationale }
     ]
   });
 

@@ -122,6 +122,20 @@
                         <a class="dropdown-item" href="#">Radiere</a>
                     </div>
                 </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Nomenclator
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Regiuni</a>
+                        <a class="dropdown-item" href="#">Judete</a>
+                        <a class="dropdown-item" href="#">Familii Ocupationale</a>
+                        <a class="dropdown-item" href="#">Ordonatori de credite</a>
+                        <a class="dropdown-item" href="#">Institutii Publice</a>
+                        <a class="dropdown-item" href="#">Angajati</a>
+                        <a class="dropdown-item" href="#">Functii</a>
+                    </div>
+                </li>
             </ul>
         </div>
     </nav>
