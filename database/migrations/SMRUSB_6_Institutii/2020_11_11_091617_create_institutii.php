@@ -43,6 +43,14 @@ class CreateInstitutii extends Migration
      */
     public function down()
     {
+        Schema::table('institutii', function (Blueprint $table){
+            $table->dropForeign('institutii_judet_foreign');
+            $table->dropForeign('institutii_localitate_foreign');
+            $table->dropForeign('institutii_ordonator_principal_foreign');
+            $table->dropForeign('institutii_ordonator_secundar_foreign');
+            $table->dropForeign('institutii_ordonator_tertiar_foreign');
+            $table->dropForeign('institutii_tip_institutie_foreign');
+        });
         Schema::dropIfExists('institutii');
     }
 }

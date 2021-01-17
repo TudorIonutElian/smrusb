@@ -9,19 +9,7 @@
         "watch-poll": "npm run watch -- --watch-poll",
         "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --disable-host-check --config=node_modules/laravel-mix/setup/webpack.config.js",
         "prod": "npm run production",
-        "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
-        "m-0": "php artisan migrate:fresh",
-        "m-1": "php artisan migrate --path=/database/migrations/SMRUSB_1_Regiuni",
-        "m-2": "php artisan migrate --path=/database/migrations/SMRUSB_2_Judete",
-        "m-3": "php artisan migrate --path=/database/migrations/SMRUSB_3_Localitati",
-        "m-4": "php artisan migrate --path=/database/migrations/SMRUSB_4_FamiliiOcupationale",
-        "m-5": "php artisan migrate --path=/database/migrations/SMRUSB_5_Ordonatori",
-        "m-6": "php artisan migrate --path=/database/migrations/SMRUSB_6_Institutii",
-        "m-7": "php artisan migrate --path=/database/migrations/SMRUSB_7_Angajati",
-        "m-8": "php artisan migrate --path=/database/migrations/SMRUSB_8_StatOrganizare",
-        "m-9": "php artisan migrate --path=/database/migrations/SMRUSB_9_Adrese",
-        "m-seed": "php artisan db:seed",
-        "m-all-seed": "npm run m-0 && npm run m-1 && npm run m-2 && npm run m-3 && npm run m-4 && npm run m-5 && npm run m-6 && npm run m-7 && npm run m-8 && npm run m-9 && npm run m-seed"
+        "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
     },
     "devDependencies": {
         "axios": "^0.19.2",

@@ -38,6 +38,9 @@ class CreateOrdonatori extends Migration
     public function down()
     {
         Schema::table('ordonatori', function (Blueprint $table){
+            $table->dropForeign('ordonatori_familie_foreign');
+            $table->dropForeign('ordonatori_judet_foreign');
+            $table->dropForeign('ordonatori_localitate_foreign');
             $table->dropForeign('ordonatori_tip_ordonator_foreign');
         });
         Schema::dropIfExists('ordonatori');

@@ -7366,7 +7366,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n.bg-main[data-v-3183e47e] {\n  background-color: #222f3e;\n  color: #fff;\n}\n.modal-body[data-v-3183e47e] {\n  width: 500px;\n    height: 80vh;\n}\n.alerta-adaugare-ordonator[data-v-3183e47e]{\n    background-color: #00b894;\n    width: 20vw;\n    height: 6vh;\n    padding: 8px;\n    z-index: 100;\n    position: absolute;\n    top: 90px;\n    right: 50px;\n    border-radius: 2%;\n    color: #fff;\n    display: none;\n}\n.displaySucces[data-v-3183e47e]{\n    display: block;\n}\n\n\n", ""]);
+exports.push([module.i, "\n.bg-main[data-v-3183e47e] {\n  background-color: #222f3e;\n  color: #fff;\n}\n.modal-body[data-v-3183e47e] {\n  width: 500px;\n    height: 80vh;\n}\n.noDisplayAlert[data-v-3183e47e]{\n    display: none;\n}\n\n", ""]);
 
 // exports
 
@@ -62316,21 +62316,15 @@ var render = function() {
             _vm._v("\n        Ordonatori de Credite\n      ")
           ]),
           _vm._v(" "),
-          _c(
-            "div",
-            {
-              staticClass: "alerta-adaugare-ordonator",
-              class: _vm.messages.showAdaugatSucces ? "displaySucces" : ""
-            },
-            [
-              _vm._v(
-                "\n            Ordonatorul de credite a fost adaugat cu success\n        "
-              )
-            ]
-          )
+          this.messages.showAdaugatSucces
+            ? _c("div", { staticClass: "col-12 alert alert-success" }, [
+                _c("strong", [_vm._v("Succes!")]),
+                _vm._v(" Ordonatorul a fost adaugat cu succes!.\n        ")
+              ])
+            : _vm._e()
         ]),
         _vm._v(" "),
-        _c("div", { staticClass: "row my-2" }, [
+        _c("div", { staticClass: "row" }, [
           _c("div", { staticClass: "container" }, [
             _c(
               "div",
@@ -62785,7 +62779,7 @@ var render = function() {
         _vm._v(" "),
         _c(
           "div",
-          { staticClass: "row mt-5" },
+          { staticClass: "row mt-2" },
           _vm._l(_vm.ordonatori, function(ordonator) {
             return _c("div", { key: ordonator.id, staticClass: "col-3 my-2" }, [
               _c("div", { staticClass: "card" }, [
@@ -78844,8 +78838,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.js");
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(vue__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var vue_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vue-router */ "./node_modules/vue-router/dist/vue-router.esm.js");
-/* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! moment */ "./node_modules/moment/moment.js");
-/* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(moment__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! moment */ "./node_modules/moment/moment.js");
+/* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(moment__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _components_Home_vue__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/Home.vue */ "./resources/js/components/Home.vue");
 /* harmony import */ var _components_Despre_vue__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/Despre.vue */ "./resources/js/components/Despre.vue");
 /* harmony import */ var _components_Judete_vue__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/Judete.vue */ "./resources/js/components/Judete.vue");
@@ -78863,7 +78857,7 @@ window.Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.
 
 vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]);
 
-vue__WEBPACK_IMPORTED_MODULE_0___default.a.prototype.moment = moment__WEBPACK_IMPORTED_MODULE_8___default.a;
+vue__WEBPACK_IMPORTED_MODULE_0___default.a.prototype.moment = moment__WEBPACK_IMPORTED_MODULE_2___default.a;
 
 
 

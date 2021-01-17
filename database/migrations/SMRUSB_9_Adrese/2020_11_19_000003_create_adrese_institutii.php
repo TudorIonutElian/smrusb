@@ -44,6 +44,13 @@ class CreateAdreseInstitutii extends Migration
      */
     public function down()
     {
+        Schema::table('adrese_institutii', function (Blueprint $table){
+            $table->dropForeign('adrese_institutii_institutie_foreign');
+            $table->dropForeign('adrese_institutii_judet_foreign');
+            $table->dropForeign('adrese_institutii_localitate_foreign');
+            $table->dropForeign('adrese_institutii_regiune_foreign');
+            $table->dropForeign('adrese_institutii_tip_foreign');
+        });
         Schema::dropIfExists('tip_adrese_insitutii');
     }
 }

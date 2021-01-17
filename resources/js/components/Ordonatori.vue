@@ -6,13 +6,13 @@
         <div class="col-12 bg-secondary text-white p-2">
           Ordonatori de Credite
         </div>
-          <div class="alerta-adaugare-ordonator" v-bind:class="messages.showAdaugatSucces ? 'displaySucces' : ''">
-              Ordonatorul de credite a fost adaugat cu success
+          <!-- Afisare mesaj de aduagare Ordonator de credite -->
+          <div class="col-12 alert alert-success" v-if="this.messages.showAdaugatSucces">
+              <strong>Succes!</strong> Ordonatorul a fost adaugat cu succes!.
           </div>
       </div>
-      <div class="row my-2">
-        <!-- Button trigger modal -->
-        <!-- Modal -->
+        <!-- Afisare modal pentru adaugare ordonatori de credite -->
+      <div class="row">
         <div class="container">
           <div
             class="modal fade"
@@ -99,7 +99,7 @@
           </div>
         </div>
       </div>
-      <div class="row mt-5">
+      <div class="row mt-2">
         <div
           class="col-3 my-2"
           v-for="ordonator in ordonatori"
@@ -236,22 +236,8 @@ export default {
   width: 500px;
     height: 80vh;
 }
-.alerta-adaugare-ordonator{
-    background-color: #00b894;
-    width: 20vw;
-    height: 6vh;
-    padding: 8px;
-    z-index: 100;
-    position: absolute;
-    top: 90px;
-    right: 50px;
-    border-radius: 2%;
-    color: #fff;
+.noDisplayAlert{
     display: none;
 }
-.displaySucces{
-    display: block;
-}
-
 
 </style>

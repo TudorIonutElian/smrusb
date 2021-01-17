@@ -32,6 +32,10 @@ class CreateIstoricStat extends Migration
      */
     public function down()
     {
+        Schema::table('istoric_stat', function (Blueprint $table){
+            $table->dropForeign('istoric_stat_actiune_foreign');
+            $table->dropForeign('istoric_stat_stat_foreign');
+        });
         Schema::dropIfExists('istoric_stat');
     }
 }

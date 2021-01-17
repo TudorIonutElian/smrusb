@@ -39,6 +39,9 @@ class CreateAngajati extends Migration
      */
     public function down()
     {
+        Schema::table('angajati', function (Blueprint $table){
+            $table->dropForeign('angajati_tip_foreign');
+        });
         Schema::dropIfExists('angajati');
     }
 }

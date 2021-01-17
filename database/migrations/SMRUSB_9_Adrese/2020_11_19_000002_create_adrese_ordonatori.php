@@ -44,6 +44,13 @@ class CreateAdreseOrdonatori extends Migration
      */
     public function down()
     {
+        Schema::table('adrese_ordonatori', function (Blueprint $table){
+            $table->dropForeign('adrese_ordonatori_judet_foreign');
+            $table->dropForeign('adrese_ordonatori_localitate_foreign');
+            $table->dropForeign('adrese_ordonatori_ordonator_foreign');
+            $table->dropForeign('adrese_ordonatori_regiune_foreign');
+            $table->dropForeign('adrese_ordonatori_tip_foreign');
+        });
         Schema::dropIfExists('adrese');
     }
 }

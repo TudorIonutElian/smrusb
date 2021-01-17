@@ -31,6 +31,10 @@ class CreateIstoricOrdonatori extends Migration
      */
     public function down()
     {
+        Schema::table('istoric_ordonatori', function (Blueprint $table){
+            $table->dropForeign('istoric_ordonatori_actiune_foreign');
+            $table->dropForeign('istoric_ordonatori_ordonator_foreign');
+        });
         Schema::dropIfExists('istoric_ordonatori');
     }
 }

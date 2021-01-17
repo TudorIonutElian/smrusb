@@ -43,6 +43,13 @@ class CreateAdreseAngajati extends Migration
      */
     public function down()
     {
+        Schema::table('adrese_angajati', function (Blueprint $table){
+            $table->dropForeign('adrese_angajati_angajat_foreign');
+            $table->dropForeign('adrese_angajati_judet_foreign');
+            $table->dropForeign('adrese_angajati_localitate_foreign');
+            $table->dropForeign('adrese_angajati_regiune_foreign');
+            $table->dropForeign('adrese_angajati_tip_foreign');
+        });
         Schema::dropIfExists('tip_adrese_angajati');
     }
 }

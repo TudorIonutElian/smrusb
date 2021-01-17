@@ -32,6 +32,9 @@ class CreateStatOrganizare extends Migration
      */
     public function down()
     {
+        Schema::table('stat_organizare', function (Blueprint $table){
+            $table->dropForeign('stat_organizare_institutie_foreign');
+        });
         Schema::dropIfExists('stat_organizare');
     }
 }

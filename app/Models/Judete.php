@@ -21,7 +21,7 @@ class Judete extends Model
         return $this->hasMany('App\Models\Localitati', 'judet');
     }
 
-    /* ------------------ AFISARE LOCALITATI------------------*/
+    /* ------------------ AFISARE ORDONATORI ------------------*/
     public function getOrdonatori(){
         return $this->hasMany('App\Models\Ordonatori', 'judet');
     }

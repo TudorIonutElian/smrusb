@@ -31,6 +31,9 @@ class CreateJudete extends Migration
      */
     public function down()
     {
+        Schema::table('judete', function (Blueprint $table){
+            $table->dropForeign('judete_regiune_foreign');
+        });
         Schema::dropIfExists('judete');
     }
 }

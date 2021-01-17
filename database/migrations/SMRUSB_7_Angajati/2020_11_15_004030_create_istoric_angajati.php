@@ -39,6 +39,12 @@ class CreateIstoricAngajati extends Migration
      */
     public function down()
     {
+        Schema::table('istoric_angajati', function (Blueprint $table){
+            $table->dropForeign('istoric_angajati_actiune_foreign');
+            $table->dropForeign('istoric_angajati_angajat_foreign');
+            $table->dropForeign('istoric_angajati_institutie_curenta_foreign');
+            $table->dropForeign('istoric_angajati_institutie_destinatara_foreign');
+        });
         Schema::dropIfExists('istoric_angajati');
     }
 }

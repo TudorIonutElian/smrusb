@@ -32,11 +32,10 @@ class CreateLocalitati extends Migration
      */
     public function down()
     {
-    
         Schema::table('localitati', function (Blueprint $table){
             $table->dropForeign('localitati_judet_foreign');
         });
-        
+
         Schema::dropIfExists('localitati');
     }
 }
