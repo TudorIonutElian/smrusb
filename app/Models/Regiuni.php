@@ -12,7 +12,7 @@ class Regiuni extends Model
     protected $table="regiuni";
 
     /* ------------------ AFISARE JUDETE------------------*/
-    public function Judete(){
+    public function getJudete(){
         return $this->hasMany('App\Models\Judete', 'regiune');
     }
 }

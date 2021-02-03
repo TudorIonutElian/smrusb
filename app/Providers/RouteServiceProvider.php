@@ -47,6 +47,15 @@ class RouteServiceProvider extends ServiceProvider
                 ->namespace($this->namespace)
                 ->group(base_path('routes/web.php'));
         });
+
+        // Mapare API Regiuni Routes
+        $this->mapRegiuniApiRoutes();
+
+        // Mapare API Judete Routes
+        $this->mapJudeteApiRoutes();
+
+        // Mapare API Ordonatori Routes
+        $this->mapOrdonatoriApiRoutes();
     }
 
     /**
@@ -59,5 +68,20 @@ class RouteServiceProvider extends ServiceProvider
         RateLimiter::for('api', function (Request $request) {
             return Limit::perMinute(60);
         });
+    }
+
+    protected function mapRegiuniApiRoutes(){
+        Route::prefix('/api/regiuni')
+            ->group(base_path('routes/regiuni.php'));
+    }
+
+    protected function mapJudeteApiRoutes(){
+        Route::prefix('/api/judete')
+            ->group(base_path('routes/judete.php'));
+    }
+
+    protected function mapOrdonatoriApiRoutes(){
+        Route::prefix('/api/ordonatori')
+            ->group(base_path('routes/ordonatori.php'));
     }
 }

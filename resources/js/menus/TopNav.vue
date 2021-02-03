@@ -22,12 +22,7 @@
                         Familii ocupationale
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">I - Invatamant</a>
-                        <a class="dropdown-item" href="#">II - Sanatate si asistenta sociala</a>
-                        <a class="dropdown-item" href="#">III - Cultura, unitati de cultura</a>
-                        <a class="dropdown-item" href="#">IV - Diplomatie</a>
-                        <a class="dropdown-item" href="#">V - Justitie si Curtea Constitutionala</a>
-                        <a class="dropdown-item" href="#">VI - Aparare, ordine publica si securitate nationala</a>
+                        <a class="dropdown-item" :href="`/familiiocupationale/${familie.id}`" v-for="familie in optiuniFamiliiOcupationale">{{ familie.denumire}}</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown">
@@ -143,7 +138,23 @@
 </template>
 
 <script>
-export default {};
+export default {
+    data(){
+        return{
+            optiuniFamiliiOcupationale:[]
+        }
+    },
+    created() {
+        this.getOptiuni();
+    },
+    methods: {
+        async getOptiuni() {
+            this.loading = true;
+            await axios.get('/api/familiiocupationale/all').then(response => this.optiuniFamiliiOcupationale = response.data.data);
+            this.loading = false;
+        }
+    },
+};
 </script>
 
 <style scoped>
