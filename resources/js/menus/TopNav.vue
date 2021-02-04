@@ -31,8 +31,7 @@
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="/ordonatori">Vezi Ordonatori</a>
-                        <a class="dropdown-item" href="#" data-toggle="modal" data-target="#exampleModal">Adauga Ordonator</a>
-                        <a class="dropdown-item" href="#">Sterge Ordonator</a>
+                        <a class="dropdown-item" href="/ordonatori/creare">Adauga Ordonator</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown">
@@ -180,7 +179,7 @@ li.nav-item:hover {
     color: #000;
 }
 li.nav-item:hover>.nav-link {
-    background-color: #E07A5F;
+    background-color: #ecac36;
     color: #000;
     border-radius: 3px;
     text-decoration: none;

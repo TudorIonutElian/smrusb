@@ -7,6 +7,9 @@ use Illuminate\Http\Resources\Json\JsonResource;
 class OrdonatoriCollection extends JsonResource
 {
     /**
+     * @var mixed
+     */
+    /**
      * Transform the resource collection into an array.
      *
      * @param  \Illuminate\Http\Request  $request
@@ -16,10 +19,15 @@ class OrdonatoriCollection extends JsonResource
     {
         return [
             'id'                    => $this->id,
+            'familie'               => $this->getFamilie['denumire'],
+            'judet'                 => $this->getJudet['denumire'],
+            'localitate'            => $this->getLocalitate['denumire'],
             'denumire'              => $this->denumire,
-            'tip'                   => $this->tip_ordonator,
+            'tip'                   => $this->getOrdonatorTip['denumire'],
             'dataInfiintare'        => $this->data_infiintare,
-            'stare'                 => $this->stare
+            'stare'                 => $this->stare,
+            'posturi'               => $this->getNumarPosturiAprobate['total'],
+            'institutii'            => $this->getInstitutii
         ];
     }
 }

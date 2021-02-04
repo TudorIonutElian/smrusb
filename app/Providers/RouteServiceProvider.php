@@ -56,6 +56,12 @@ class RouteServiceProvider extends ServiceProvider
 
         // Mapare API Ordonatori Routes
         $this->mapOrdonatoriApiRoutes();
+
+        // Mapare API Familii Ocupationale Routes
+        $this->mapFamiliiOcupationaleApiRoutes();
+
+        // Mapare API Tipuri Ordonatori Routes
+        $this->mapTipuriOrdonatoriApiRoutes();
     }
 
     /**
@@ -83,5 +89,15 @@ class RouteServiceProvider extends ServiceProvider
     protected function mapOrdonatoriApiRoutes(){
         Route::prefix('/api/ordonatori')
             ->group(base_path('routes/ordonatori.php'));
+    }
+
+    protected function mapFamiliiOcupationaleApiRoutes(){
+        Route::prefix('/api/familiiocupationale')
+            ->group(base_path('routes/familiiocupationale.php'));
+    }
+
+    protected function mapTipuriOrdonatoriApiRoutes(){
+        Route::prefix('/api/tipuriordonatori')
+            ->group(base_path('routes/tipuriordonatori.php'));
     }
 }

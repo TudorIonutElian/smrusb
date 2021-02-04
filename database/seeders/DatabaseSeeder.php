@@ -45,7 +45,10 @@ class DatabaseSeeder extends Seeder
                 ActiuniOrdonatoriSeeder::class,
 
                 // Insert Actiuni Angajati
-                ActiuniAngajatiSeeder::class
+                ActiuniAngajatiSeeder::class,
+
+                // Insert Actiuni Angajati
+                PosturiAprobateSeeder::class
             ]
         );
     }

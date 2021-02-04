@@ -28,6 +28,7 @@ import Judete from './components/Judete/Judete.vue';
 
 import Ordonatori from './components/Ordonatori/Ordonatori.vue';
 import Ordonator from './components/Ordonatori/Ordonator.vue';
+import OrdonatoriCreare from './components/Ordonatori/OrdonatoriCreare.vue';
 
 import Institutii from './components/InstitutiiPublice/Institutii.vue';
 
@@ -58,6 +59,9 @@ const router = new VueRouter({
 
         // Route Ordonatori de Credite
         {path: '/ordonatori', component: Ordonatori},
+
+        // Route Ordonatori de Credite - Creare
+        {path: '/ordonatori/creare', component: OrdonatoriCreare},
 
         // Route Ordonator de Credite
         {path: '/ordonator/:id', component: Ordonator},

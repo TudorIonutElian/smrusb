@@ -14,6 +14,7 @@ use App\Models\Ordonatori;
 
 // Preluare toti ordonatorii de credite
 Route::get('/', function () {
+
     return OrdonatoriCollection::collection(Ordonatori::all());
 });
 
@@ -21,8 +22,15 @@ Route::get('/', function () {
 Route::get('/{id}', function ($id) {
     $ordonator = DB::table('ordonatori')->where('ordonatori.id', '=', $id)
         ->join('tip_ordonatori', 'ordonatori.tip_ordonator', '=', 'tip_ordonatori.id')
-        ->select('ordonatori.id', 'ordonatori.denumire', 'tip_ordonatori.denumire as tip', 'ordonatori.data_infiintare', 'ordonatori.stare')
-        ->get();
+        ->join('posturi_aprobate', 'posturi_aprobate.ordonator_id', '=', 'ordonatori.id')
+        ->select(
+            'ordonatori.id',
+            'ordonatori.denumire',
+            'tip_ordonatori.denumire as tip',
+            'ordonatori.data_infiintare',
+            'ordonatori.stare',
+            'posturi_aprobate.total'
+        )->get();
 
     $institutii = DB::table('institutii')->where('institutii.ordonator_principal', '=', $id)
         ->join('ordonatori', 'institutii.ordonator_principal', '=', 'ordonatori.id')

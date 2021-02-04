@@ -4,7 +4,7 @@
         <top-nav></top-nav>
         <div class="container-fluid">
             <div class="row">
-                <div class="col-12 bg-primary text-white p-3">Regiunile Romaniei</div>
+                <div class="col-12 orange-label text-white p-3">Regiunile Romaniei</div>
             </div>
             <div class="row" v-if="loading">
                 <loading-animation></loading-animation>
@@ -14,7 +14,7 @@
                     <div class="card">
 
                         <div class="card-body">
-                            <h5 class="card-title p-2 bg-primary text-white text-center">{{ regiune.denumireRegiune}}</h5>
+                            <h5 class="card-title p-2 orange-label text-white text-center">{{ regiune.denumireRegiune}}</h5>
                             <div class="box-institutie">
                                 <div>Judete</div>
                                 <div>({{ regiune.judete.length}})</div>

@@ -15,8 +15,35 @@ class Ordonatori extends Model
     public $timestamps = false;
 
 
-    /* ------------------ AFISARE LOCALITATI------------------*/
+    /* ------------------ AFISARE Judet------------------*/
     public function getJudet(){
-        return $this->belongsTo('App\Models\Judete', 'judet');
+        return $this->belongsTo(Judete::class, 'judet');
     }
+
+    /* ------------------ AFISARE Judet------------------*/
+    public function getLocalitate(){
+        return $this->hasOne(Localitati::class, 'id', 'localitate');
+    }
+
+    /* ------------------ AFISARE POSTURI APROBATE------------------*/
+    public function getNumarPosturiAprobate(){
+        return $this->hasOne(PosturiAprobate::class, 'ordonator_id')->where('status', '=', 1)->limit(1);
+    }
+
+    /* ------------------ AFISARE Familie Ocupationala------------------*/
+    public function getFamilie(){
+        return $this->hasOne(FamiliiOcupationale::class, 'id');
+    }
+
+    /* ------------------ AFISARE Tip Ordonator de Credite------------------*/
+    public function getOrdonatorTip(){
+        return $this->belongsTo(TipOrdonatori::class, 'id');
+    }
+
+    /* ------------------ AFISARE Tip Ordonator de Credite------------------*/
+    public function getInstitutii(){
+        return $this->hasMany(Institutii::class, 'ordonator');
+    }
+
+
 }
