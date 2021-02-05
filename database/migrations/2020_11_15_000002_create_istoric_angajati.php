@@ -16,20 +16,90 @@ class CreateIstoricAngajati extends Migration
         Schema::create('istoric_angajati', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('angajat');
-            $table->unsignedBigInteger('institutie_curenta');
-            $table->unsignedBigInteger('institutie_destinatara');
-            $table->unsignedBigInteger('actiune');
-            $table->date('data_inceput');
-            $table->date('data_sfarsit')->nullable();
+            $table->date('data')->default(DB::raw('CURRENT_TIMESTAMP'));
+            $table->string('detalii', 100);
+            $table->enum('tip', [1,2,3,4,5,6,7]);
 
-
-            // Definire Foreign Keys pentru Istoric Angajati
             $table->foreign('angajat')->references('id')->on('angajati');
-            $table->foreign('institutie_curenta')->references('id')->on('institutii');
-            $table->foreign('institutie_destinatara')->references('id')->on('institutii');
-            $table->foreign('actiune')->references('id')->on('actiuni_angajati');
-
         });
+
+        // Setare trigger pentru creare angajati
+        DB::unprepared('
+                CREATE TRIGGER after_angajati_creare
+                    AFTER INSERT ON angajati FOR EACH ROW
+                        BEGIN
+                            INSERT INTO istoric_angajati(
+                                angajat,
+                                detalii,
+                                tip)
+                            VALUES (
+                                new.id,
+                                "Persoana a gost angajata",
+                                1);
+                        END
+                ');
+
+        // Setare trigger pentru update judet
+        DB::unprepared('
+                CREATE TRIGGER after_angajati_update
+                    AFTER UPDATE ON angajati FOR EACH ROW
+                        BEGIN
+                            IF NEW.STARE = 1 THEN
+                                INSERT INTO istoric_angajati(
+                                    angajat,
+                                    detalii,
+                                    tip)
+                                VALUES (
+                                    new.id,
+                                    "Persoana a fost delegata la.",
+                                    1);
+                            END IF;
+
+                            IF NEW.STARE = 2 THEN
+                                INSERT INTO istoric_angajati(
+                                    angajat,
+                                    detalii,
+                                    tip)
+                                VALUES (
+                                    new.id,
+                                    "Persoana a fost detasata la.",
+                                    2);
+                            END IF;
+
+                            IF NEW.STARE = 3 THEN
+                                INSERT INTO istoric_angajati(
+                                    angajat,
+                                    detalii,
+                                    tip)
+                                VALUES (
+                                    new.id,
+                                    "Persoanei a fost suspendata.",
+                                    3);
+                            END IF;
+
+                            IF NEW.STARE = 4 THEN
+                                INSERT INTO istoric_angajati(
+                                    angajat,
+                                    detalii,
+                                    tip)
+                                VALUES (
+                                    new.id,
+                                    "Persoanei a fost imputernicita.",
+                                    4);
+                            END IF;
+
+                            IF NEW.STARE = 5 THEN
+                                INSERT INTO istoric_angajati(
+                                    angajat,
+                                    detalii,
+                                    tip)
+                                VALUES (
+                                    new.id,
+                                    "Persoanei a fost mutata.",
+                                    5);
+                            END IF;
+                        END
+                ');
     }
 
     /**
@@ -39,12 +109,6 @@ class CreateIstoricAngajati extends Migration
      */
     public function down()
     {
-        Schema::table('istoric_angajati', function (Blueprint $table){
-            $table->dropForeign('istoric_angajati_actiune_foreign');
-            $table->dropForeign('istoric_angajati_angajat_foreign');
-            $table->dropForeign('istoric_angajati_institutie_curenta_foreign');
-            $table->dropForeign('istoric_angajati_institutie_destinatara_foreign');
-        });
         Schema::dropIfExists('istoric_angajati');
     }
 }

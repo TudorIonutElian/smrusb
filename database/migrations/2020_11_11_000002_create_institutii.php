@@ -16,8 +16,8 @@ class CreateInstitutii extends Migration
     {
         Schema::create('institutii', function (Blueprint $table) {
             $table->id();
+            $table->enum('tip', [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
             $table->unsignedBigInteger('ordonator');
-            $table->unsignedBigInteger('tip_institutie');
             $table->unsignedBigInteger('judet');
             $table->unsignedBigInteger('localitate');
             $table->string('denumire', 200);
@@ -25,7 +25,6 @@ class CreateInstitutii extends Migration
             $table->boolean('stare');
 
             $table->foreign('ordonator')->references('id')->on('ordonatori')->onDelete('cascade');
-            $table->foreign('tip_institutie')->references('id')->on('tip_institutii')->onDelete('cascade');
             $table->foreign('judet')->references('id')->on('judete')->onDelete('cascade');
             $table->foreign('localitate')->references('id')->on('localitati')->onDelete('cascade');
 
@@ -43,7 +42,6 @@ class CreateInstitutii extends Migration
             $table->dropForeign('institutii_judet_foreign');
             $table->dropForeign('institutii_localitate_foreign');
             $table->dropForeign('institutii_ordonator_foreign');
-            $table->dropForeign('institutii_tip_institutie_foreign');
         });
         Schema::dropIfExists('institutii');
     }

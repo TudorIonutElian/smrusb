@@ -17,14 +17,13 @@ class CreateOrdonatori extends Migration
             $table->id();
             $table->unsignedBigInteger('familie')->nullable();
             $table->string('denumire', 100);
-            $table->unsignedBigInteger('tip_ordonator');
+            $table->enum('tip_ordonator', [1,2,3]);
             $table->unsignedBigInteger('judet');
             $table->unsignedBigInteger('localitate');
             $table->date('data_infiintare');
             $table->boolean('stare');
 
             $table->foreign('familie')->references('id')->on('familii_ocupationale')->onDelete('cascade');
-            $table->foreign('tip_ordonator')->references('id')->on('tip_ordonatori')->onDelete('cascade');
             $table->foreign('judet')->references('id')->on('judete')->onDelete('cascade');
             $table->foreign('localitate')->references('id')->on('localitati')->onDelete('cascade');
         });
@@ -41,7 +40,6 @@ class CreateOrdonatori extends Migration
             $table->dropForeign('ordonatori_familie_foreign');
             $table->dropForeign('ordonatori_judet_foreign');
             $table->dropForeign('ordonatori_localitate_foreign');
-            $table->dropForeign('ordonatori_tip_ordonator_foreign');
         });
         Schema::dropIfExists('ordonatori');
     }

@@ -15,20 +15,12 @@ class CreateAngajati extends Migration
     {
         Schema::create('angajati', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('tip')->nullable();
             $table->string('nume_angajat', 30);
             $table->string('prenume_angajat', 70);
             $table->date('data_nasterii', 30);
-            $table->integer('cod_numeric_personal');
+            $table->string('cod_numeric_personal', 13);
             $table->tinyInteger('stare');
-
-            // Urmeaza implementarea
-            $table->unsignedBigInteger('institutie_curenta');
-            $table->unsignedBigInteger('functie_curenta');
-            $table->unsignedTinyInteger('grad_curent');
-
-
-            $table->foreign('tip')->references('id')->on('tip_angajati');
+            $table->enum('tip', [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
         });
     }
 
@@ -39,9 +31,6 @@ class CreateAngajati extends Migration
      */
     public function down()
     {
-        Schema::table('angajati', function (Blueprint $table){
-            $table->dropForeign('angajati_tip_foreign');
-        });
         Schema::dropIfExists('angajati');
     }
 }

@@ -20,7 +20,6 @@ class CreateIstoricOrdonatori extends Migration
             $table->date('data_operatiunii')->default(DB::raw('CURRENT_TIMESTAMP'));
 
             $table->foreign('ordonator')->references('id')->on('ordonatori')->onDelete('cascade');
-            $table->foreign('actiune')->references('id')->on('actiuni_ordonatori')->onDelete('cascade');
         });
     }
 
@@ -32,7 +31,6 @@ class CreateIstoricOrdonatori extends Migration
     public function down()
     {
         Schema::table('istoric_ordonatori', function (Blueprint $table){
-            $table->dropForeign('istoric_ordonatori_actiune_foreign');
             $table->dropForeign('istoric_ordonatori_ordonator_foreign');
         });
         Schema::dropIfExists('istoric_ordonatori');

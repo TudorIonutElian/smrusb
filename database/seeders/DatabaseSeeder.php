@@ -26,26 +26,11 @@ class DatabaseSeeder extends Seeder
                 // Insert Familii Ocupationale
                 FamiliiOcupationaleSeeder::class,
 
-                // Insert Tip Ordonatori
-                TipOrdonatoriSeeder::class,
-
                 // Insert Ordonatori
                 OrdonatoriSeeder::class,
 
-                // Insert Tip Institutii
-                TipInstitutiiSeeder::class,
-
                 // Insert Institutii
                 InstitutiiSeeder::class,
-
-                // Insert Tip Angajati
-                TipAngajatiSeeder::class,
-
-                // Insert Actiuni Ordonatori
-                ActiuniOrdonatoriSeeder::class,
-
-                // Insert Actiuni Angajati
-                ActiuniAngajatiSeeder::class,
 
                 // Insert Actiuni Angajati
                 PosturiAprobateSeeder::class
