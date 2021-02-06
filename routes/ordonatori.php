@@ -21,12 +21,10 @@ Route::get('/', function () {
 // Preluare date ordonator unic
 Route::get('/{id}', function ($id) {
     $ordonator = DB::table('ordonatori')->where('ordonatori.id', '=', $id)
-        ->join('tip_ordonatori', 'ordonatori.tip_ordonator', '=', 'tip_ordonatori.id')
         ->join('posturi_aprobate', 'posturi_aprobate.ordonator_id', '=', 'ordonatori.id')
         ->select(
             'ordonatori.id',
             'ordonatori.denumire',
-            'tip_ordonatori.denumire as tip',
             'ordonatori.data_infiintare',
             'ordonatori.stare',
             'posturi_aprobate.total'

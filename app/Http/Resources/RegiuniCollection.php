@@ -17,6 +17,8 @@ class RegiuniCollection extends JsonResource
         return [
             'idRegiune'         => $this->id,
             'denumireRegiune'   => $this->denumire,
+            'stare'             => $this->stare,
+            'data'              => $this->data_creare,
             'judete'            => $this->getJudete
         ];
     }

@@ -10,6 +10,9 @@ class Judete extends Model
     use HasFactory;
     protected $table="judete";
 
+    // Anulare coloane created_at si updated_at
+    public $timestamps = false;
+
 
     /* ------------------ AFISARE REGIUNE------------------*/
     public function getRegiune(){

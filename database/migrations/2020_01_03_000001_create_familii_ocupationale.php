@@ -17,6 +17,7 @@ class CreateFamiliiOcupationale extends Migration
             $table->id();
             $table->string('denumire', 100);
             $table->tinyInteger('stare')->default('1');
+            $table->date('data_creare')->default(DB::raw('CURRENT_TIMESTAMP'));
         });
     }
 

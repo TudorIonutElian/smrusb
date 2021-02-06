@@ -4,6 +4,7 @@
  * building robust, powerful web applications using Vue and Laravel.
  */
 
+
 require('./bootstrap');
 
 window.Vue = require('vue');
@@ -35,6 +36,10 @@ import Institutii from './components/InstitutiiPublice/Institutii.vue';
 import Angajati from './components/Angajati/Angajati.vue';
 
 import FamiliiOcupationale from './components/FamiliiOcupationale/FamiliiOcupationaleAll.vue';
+
+import NomenclatorRegiuni from "./components/Nomenclator/Regiuni/NomenclatorRegiuni";
+import NomenclatorJudete from "./components/Nomenclator/Judete/NomenclatorJudete";
+import NomenclatorFamilii from "./components/Nomenclator/Familii/NomenclatorFamilii";
 
 const router = new VueRouter({
     mode: 'history',
@@ -71,6 +76,11 @@ const router = new VueRouter({
 
         // Route Angajati
         {path: '/angajati', component: Angajati},
+
+        // Route Nomenclator
+        {path: '/nomenclator/regiuni', component: NomenclatorRegiuni},
+        {path: '/nomenclator/judete', component: NomenclatorJudete},
+        {path: '/nomenclator/familii', component: NomenclatorFamilii},
 
 
     ]

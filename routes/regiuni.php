@@ -1,6 +1,7 @@
 <?php
 
 // Importuri necesare
+use App\Http\Controllers\RegiuniController;
 use App\Http\Resources\RegiuniCollection;
 use App\Models\Judete;
 use App\Models\Regiuni;
@@ -31,6 +32,16 @@ Route::get('/{id}/localitati', function($id){
 
     return $localitati;
 });
+
+// Suspenda Regiune
+Route::post('/suspenda', [RegiuniController::class, 'suspenda']);
+
+// Reactiveaza Regiune
+Route::post('/reactiveaza', [RegiuniController::class, 'reactiveaza']);
+
+// Reactiveaza Regiune
+Route::get('/istoric', [RegiuniController::class, 'istoric']);
+
 
 
 

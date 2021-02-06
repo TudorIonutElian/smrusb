@@ -121,17 +121,19 @@
                         Nomenclator
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Regiuni</a>
-                        <a class="dropdown-item" href="#">Judete</a>
-                        <a class="dropdown-item" href="#">Familii Ocupationale</a>
-                        <a class="dropdown-item" href="#">Ordonatori de credite</a>
-                        <a class="dropdown-item" href="#">Institutii Publice</a>
-                        <a class="dropdown-item" href="#">Angajati</a>
-                        <a class="dropdown-item" href="#">Functii</a>
+                        <a class="dropdown-item" href="/nomenclator/regiuni">Regiuni</a>
+                        <a class="dropdown-item" href="/nomenclator/judete">Judete</a>
+                        <a class="dropdown-item" href="/nomenclator/familii">Familii Ocupationale</a>
+                        <a class="dropdown-item" href="/nomenclator/ordonatori">Ordonatori de credite</a>
+                        <a class="dropdown-item" href="/nomenclator/institutii">Institutii Publice</a>
+                        <a class="dropdown-item" href="/nomenclator/angajati">Angajati</a>
+                        <a class="dropdown-item" href="/nomenclator/functii">Functii</a>
                     </div>
                 </li>
             </ul>
         </div>
+        <button class="btn btn-success">Login</button>
+        <button class="btn btn-primary">Contul Meu</button>
     </nav>
 </div>
 </template>
@@ -157,6 +159,7 @@ export default {
 </script>
 
 <style scoped>
+
 .navbar {
     background-color: #3D405B;
 }

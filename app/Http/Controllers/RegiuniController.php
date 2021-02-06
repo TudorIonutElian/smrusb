@@ -2,83 +2,51 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\IstoricRegiuni;
+use App\Models\Regiuni;
 use Illuminate\Http\Request;
 
 class RegiuniController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function index()
+    public function suspenda(Request $request)
     {
-        //
+
+        // Preluare ID trimis
+         $idRegiunePentruDezactivat = $request->id;
+
+        // Identificare Regiune pentru suspendare
+        $regiuneSuspendata = Regiuni::find($idRegiunePentruDezactivat);
+
+        // Schimbare stare regiune
+        $regiuneSuspendata->stare = 0;
+
+        // Salvare modificari efectuate asupra regiuniii
+        $regiuneSuspendata->save();
+
+        return response("Regiunea a fost suspendata cu succes", 200)->header('Content-Type', 'application/json');
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
+    public function reactiveaza(Request $request)
     {
-        //
+        // Preluare ID trimis
+        $idRegiunePentruDezactivat = $request->id;
+
+        // Identificare Regiune pentru suspendare
+        $regiuneSuspendata = Regiuni::find($idRegiunePentruDezactivat);
+
+        // Schimbare stare regiune
+        $regiuneSuspendata->stare = 1;
+
+        // Salvare modificari efectuate asupra regiuniii
+        $regiuneSuspendata->save();
+
+        return response("Regiunea a fost reactivata cu succes", 200)->header('Content-Type', 'application/json');
     }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function store(Request $request)
+    public function istoric()
     {
-        //
+        return $istoricRegiuni = IstoricRegiuni::orderBy('regiune')->orderBy('tip')->get();
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function show($id)
-    {
-        //
-    }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function edit($id)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, $id)
-    {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy($id)
-    {
-        //
-    }
 }

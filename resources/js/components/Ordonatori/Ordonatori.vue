@@ -49,10 +49,10 @@
                       <div class="box-institutie">
                           <div>Stare</div>
                           <div v-if="ordonator.stare" style="background-color: #38c172">
-                              Activ
+                              <span>Activ</span>
                           </div>
                           <div v-else style="background-color: #d0211c">
-                              Radiat
+                              <span style="background-color: #38c172">Radiat</span>
                           </div>
                       </div>
                       <div class="box-institutie">
@@ -83,7 +83,6 @@ export default {
         ordonatori: [],
         familiiOcupationale: [],
         judete: [],
-        tipOrdonatori: [],
         localitati: [],
         ordonatorNou:{
             familie: null,
@@ -106,7 +105,6 @@ export default {
     await this.getOrdonatori();
     await this.getFamiliiOcupationale();
     await this.getJudete();
-    await this.getTipuriOrdonatori();
   },
   methods: {
       // preluare familii ocupationale de la API

@@ -11,6 +11,9 @@ class Regiuni extends Model
 
     protected $table="regiuni";
 
+    // Anulare coloane created_at si updated_at
+    public $timestamps = false;
+
     /* ------------------ AFISARE JUDETE------------------*/
     public function getJudete(){
         return $this->hasMany('App\Models\Judete', 'regiune');

@@ -2,83 +2,47 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Judete;
 use Illuminate\Http\Request;
 
-class JudeteController extends Controller
-{
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function index()
+class JudeteController extends Controller{
+
+    public function suspenda(Request $request)
     {
-        //
+        // Preluare ID trimis
+        $idJudetPentruSuspendare = $request->id;
+
+        // Identificare Regiune pentru suspendare
+        $judetSuspendare = Judete::find($idJudetPentruSuspendare);
+
+        // Schimbare stare regiune
+        $judetSuspendare->stare = 0;
+
+        // Salvare modificari efectuate asupra regiuniii
+        $judetSuspendare->save();
+
+        return response("Judetul a fost suspendat cu succes", 200)->header('Content-Type', 'application/json');
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
+    public function reactiveaza(Request $request)
     {
-        //
+        // Preluare ID trimis
+        $idJudetPentruReactivare = $request->id;
+
+        // Identificare Regiune pentru suspendare
+        $judetReactivat = Judete::find($idJudetPentruReactivare);
+
+        // Schimbare stare regiune
+        $judetReactivat->stare = 1;
+
+        // Salvare modificari efectuate asupra regiuniii
+        $judetReactivat->save();
+
+        return response("Judetul a fost reactivat cu succes", 200)->header('Content-Type', 'application/json');
     }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function store(Request $request)
+    public function istoric()
     {
-        //
-    }
-
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function show($id)
-    {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function edit($id)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, $id)
-    {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy($id)
-    {
-        //
+        return $istoricJudete = IstoricJudete::orderBy('judet')->orderBy('tip')->get();
     }
 }

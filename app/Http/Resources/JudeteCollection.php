@@ -20,7 +20,8 @@ class JudeteCollection extends JsonResource
             'denumireRegiune'       => $this->getRegiune->denumire,
             'numarOrdonatori'       => count($this->getOrdonatori),
             'localitati'            => $this->getLocalitati,
-            'ordonatori'            => $this->getOrdonatori
+            'data'                  => $this->data_creare,
+            'stare'                 => $this->stare
         ];
     }
 }

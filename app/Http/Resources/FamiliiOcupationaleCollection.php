@@ -17,6 +17,8 @@ class FamiliiOcupationaleCollection extends JsonResource
         return [
             'id'                    => $this->id,
             'denumire'              => $this->denumire,
+            'ordonatori'            => $this->getOrdonatori,
+            'data'                  => $this->data_creare,
             'stare'                 => $this->stare
         ];
     }

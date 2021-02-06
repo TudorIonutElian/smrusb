@@ -36,11 +36,6 @@ class Ordonatori extends Model
     }
 
     /* ------------------ AFISARE Tip Ordonator de Credite------------------*/
-    public function getOrdonatorTip(){
-        return $this->belongsTo(TipOrdonatori::class, 'id');
-    }
-
-    /* ------------------ AFISARE Tip Ordonator de Credite------------------*/
     public function getInstitutii(){
         return $this->hasMany(Institutii::class, 'ordonator');
     }

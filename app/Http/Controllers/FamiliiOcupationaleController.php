@@ -2,83 +2,43 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\FamiliiOcupationale;
 use Illuminate\Http\Request;
 
 class FamiliiOcupationaleController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function index()
+    public function suspenda(Request $request)
     {
-        //
+
+        // Preluare ID trimis
+        $idFamiliePentruDezactivat = $request->id;
+
+        // Identificare Familie pentru suspendare
+        $familieSuspendata = FamiliiOcupationale::find($idFamiliePentruDezactivat);
+
+        // Schimbare stare regiune
+        $familieSuspendata->stare = 0;
+
+        // Salvare modificari efectuate asupra regiuniii
+        $familieSuspendata->save();
+
+        return response("Familia a fost suspendata cu succes", 200)->header('Content-Type', 'application/json');
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
+    public function reactiveaza(Request $request)
     {
-        //
-    }
+        // Preluare ID trimis
+        $idFamiliePentruReactivat = $request->id;
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function store(Request $request)
-    {
-        //
-    }
+        // Identificare Regiune pentru suspendare
+        $familieReactivata = FamiliiOcupationale::find($idFamiliePentruReactivat);
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function show($id)
-    {
-        //
-    }
+        // Schimbare stare regiune
+        $familieReactivata->stare = 1;
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function edit($id)
-    {
-        //
-    }
+        // Salvare modificari efectuate asupra regiuniii
+        $familieReactivata->save();
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, $id)
-    {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy($id)
-    {
-        //
+        return response("Familia a fost reactivata cu succes", 200)->header('Content-Type', 'application/json');
     }
 }
